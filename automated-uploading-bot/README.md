@@ -39,8 +39,8 @@ Give the chromedriver permissions:
     chmod +x /home/myname/projects/youtube-autoupload-bot/chromedriver.exe
 
 Change the following paths in the main.py file (change where it says "myname"):
+                                                
                                                 ##
-    
     options.add_argument("user-data-dir=/home/myname/.config/google-chrome-beta")
     options.binary_location = "/usr/bin/google-chrome-beta" #(dont change this)
 
