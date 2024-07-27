@@ -15,11 +15,11 @@ args = parser.parse_args()
 
 options = Options()
 options.add_argument("--log-level=3")
-options.add_argument("user-data-dir=/home/myname/.config/google-chrome-beta")
+options.add_argument("user-data-dir=/home/tiny_ling/.config/google-chrome-beta")
 options.binary_location = "/usr/bin/google-chrome-beta"
 
 # Update this path to where your chromedriver.exe is located for Chrome Beta
-chromedriver_path = "/home/myname/projects/youtube-autoupload-bot/automated-uploading-bot/chromedriver.exe"
+chromedriver_path = "/home/tiny_ling/projects/Youtubot/Youtuber/automated-uploading-bot/chromedriver.exe"
 
 if args.answer == 1:
     nameofvid = args.video_name
@@ -30,6 +30,7 @@ if args.answer == 1:
         bot = webdriver.Chrome(service=service, options=options)
 
         bot.get("https://studio.youtube.com")
+        
         time.sleep(3)
         upload_button = bot.find_element(By.XPATH, '//*[@id="upload-icon"]')
         upload_button.click()
