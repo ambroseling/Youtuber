@@ -1,24 +1,33 @@
-import time, os
+import time
+import os
+import argparse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 
+# Set up argument parser
+parser = argparse.ArgumentParser(description="YouTube Auto Upload Bot")
+parser.add_argument('answer', type=int, choices=[1, 2], help="Press 1 if you want to spam same video or Press 2 if you want to upload multiple videos")
+parser.add_argument('video_name', type=str, help="Put the name of the video you want to upload (Ex: vid.mp4 or myshort.mp4 etc..)")
+parser.add_argument('howmany', type=int, nargs='?', default=1, help="How many times you want to upload this video (only for spamming the same video)")
+args = parser.parse_args()
 
-
-options = webdriver.ChromeOptions()
-# options.add_experimental_option('excludeSwitches', ['enable-logging'])
+options = Options()
 options.add_argument("--log-level=3")
-options.add_argument("user-data-dir=C:\\Users\\User\\AppData\\Local\Google\\Chrome Beta\\User Data\\")
-options.binary_location = "C:\\Program Files\\Google\\Chrome Beta\\Application\\chrome.exe"
-print("\033[1;31;40m IMPORTANT: Put one or more videos in the *videos* folder in the bot directory. Please make sure to name the video files like this --> Ex: vid1.mp4 vid2.mp4 vid3.mp4 etc..")
-time.sleep(6)
-answer = input("\033[1;32;40m Press 1 if you want to spam same video or Press 2 if you want to upload multiple videos: ")
+options.add_argument("user-data-dir=/home/myname/.config/google-chrome-beta")
+options.binary_location = "/usr/bin/google-chrome-beta"
 
-if(int(answer) == 1):
-    nameofvid = input("\033[1;33;40m Put the name of the video you want to upload (Ex: vid.mp4 or myshort.mp4 etc..) ---> ")
-    howmany = input("\033[1;33;40m How many times you want to upload this video ---> ")
+# Update this path to where your chromedriver.exe is located for Chrome Beta
+chromedriver_path = "/home/myname/projects/youtube-autoupload-bot/chromedriver.exe"
 
-    for i in range(int(howmany)):
-        bot = webdriver.Chrome(executable_path="chromedriver.exe", chrome_options=options)
+if args.answer == 1:
+    nameofvid = args.video_name
+    howmany = args.howmany
+
+    for i in range(howmany):
+        service = Service(chromedriver_path)
+        bot = webdriver.Chrome(service=service, options=options)
 
         bot.get("https://studio.youtube.com")
         time.sleep(3)
@@ -34,7 +43,7 @@ if(int(answer) == 1):
         time.sleep(7)
 
         next_button = bot.find_element(By.XPATH, '//*[@id="next-button"]')
-        for i in range(3):
+        for _ in range(3):
             next_button.click()
             time.sleep(1)
 
@@ -43,9 +52,9 @@ if(int(answer) == 1):
         time.sleep(5)
         bot.quit()
 
-elif(int(answer) == 2):
+elif args.answer == 2:
     print("\033[1;31;40m IMPORTANT: Please make sure the name of the videos are like this: vid1.mp4, vid2.mp4, vid3.mp4 ...  etc")
-    dir_path = '.\\videos'
+    dir_path = './videos'
     count = 0
 
     for path in os.listdir(dir_path):
@@ -55,7 +64,8 @@ elif(int(answer) == 2):
     time.sleep(6)
 
     for i in range(count):
-        bot = webdriver.Chrome(executable_path="chromedriver.exe", chrome_options=options)
+        service = Service(chromedriver_path)
+        bot = webdriver.Chrome(service=service, options=options)
 
         bot.get("https://studio.youtube.com")
         time.sleep(3)
@@ -64,7 +74,7 @@ elif(int(answer) == 2):
         time.sleep(1)
 
         file_input = bot.find_element(By.XPATH, '//*[@id="content"]/input')
-        simp_path = 'videos/vid{}.mp4'.format(str(i+1))
+        simp_path = 'videos/vid{}.mp4'.format(str(i + 1))
         abs_path = os.path.abspath(simp_path)
         
         file_input.send_keys(abs_path)
@@ -72,7 +82,7 @@ elif(int(answer) == 2):
         time.sleep(7)
 
         next_button = bot.find_element(By.XPATH, '//*[@id="next-button"]')
-        for i in range(3):
+        for _ in range(3):
             next_button.click()
             time.sleep(1)
 
@@ -80,7 +90,3 @@ elif(int(answer) == 2):
         done_button.click()
         time.sleep(5)
         bot.quit()
-
-
-
-
