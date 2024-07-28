@@ -1,0 +1,3 @@
+[submodule "automated-uploading-bot/whisperX"]
+	path = automated-uploading-bot/whisperX
+	url = https://github.com/m-bain/whisperX.git
