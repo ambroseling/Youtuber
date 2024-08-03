@@ -11,166 +11,150 @@ Style: Default,Arial,12,&H00FF00FF,&H000000FF,&H00000000,&H64000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.55,0:00:00.69,Default,,0,0,0,,{\u1}This{\u0} code starts
-Dialogue: 0,0:00:00.69,0:00:00.75,Default,,0,0,0,,This code starts
-Dialogue: 0,0:00:00.75,0:00:00.95,Default,,0,0,0,,This {\u1}code{\u0} starts
-Dialogue: 0,0:00:00.95,0:00:00.97,Default,,0,0,0,,This code starts
-Dialogue: 0,0:00:00.97,0:00:01.29,Default,,0,0,0,,This code {\u1}starts{\u0}
-Dialogue: 0,0:00:01.51,0:00:01.79,Default,,0,0,0,,{\u1}by{\u0} defining a
-Dialogue: 0,0:00:01.79,0:00:01.93,Default,,0,0,0,,by defining a
-Dialogue: 0,0:00:01.93,0:00:02.43,Default,,0,0,0,,by {\u1}defining{\u0} a
-Dialogue: 0,0:00:02.43,0:00:02.51,Default,,0,0,0,,by defining a
-Dialogue: 0,0:00:02.51,0:00:02.57,Default,,0,0,0,,by defining {\u1}a{\u0}
-Dialogue: 0,0:00:02.67,0:00:03.09,Default,,0,0,0,,{\u1}function{\u0} bubble
-Dialogue: 0,0:00:03.09,0:00:03.53,Default,,0,0,0,,function bubble
-Dialogue: 0,0:00:03.53,0:00:03.87,Default,,0,0,0,,function {\u1}bubble{\u0}
-Dialogue: 0,0:00:03.97,0:00:04.25,Default,,0,0,0,,{\u1}sort{\u0} that takes an
-Dialogue: 0,0:00:04.25,0:00:05.31,Default,,0,0,0,,sort that takes an
-Dialogue: 0,0:00:05.31,0:00:05.51,Default,,0,0,0,,sort {\u1}that{\u0} takes an
-Dialogue: 0,0:00:05.51,0:00:05.59,Default,,0,0,0,,sort that takes an
-Dialogue: 0,0:00:05.59,0:00:05.91,Default,,0,0,0,,sort that {\u1}takes{\u0} an
-Dialogue: 0,0:00:05.91,0:00:06.03,Default,,0,0,0,,sort that takes an
-Dialogue: 0,0:00:06.03,0:00:06.11,Default,,0,0,0,,sort that takes {\u1}an{\u0}
-Dialogue: 0,0:00:06.15,0:00:06.57,Default,,0,0,0,,{\u1}array{\u0} arr as
-Dialogue: 0,0:00:06.57,0:00:07.07,Default,,0,0,0,,array arr as
-Dialogue: 0,0:00:07.07,0:00:07.83,Default,,0,0,0,,array {\u1}arr{\u0} as
-Dialogue: 0,0:00:07.84,0:00:08.28,Default,,0,0,0,,array arr as
-Dialogue: 0,0:00:08.28,0:00:08.44,Default,,0,0,0,,array arr {\u1}as{\u0}
-Dialogue: 0,0:00:08.92,0:00:09.26,Default,,0,0,0,,{\u1}input.{\u0} The
-Dialogue: 0,0:00:09.26,0:00:11.80,Default,,0,0,0,,input. The
-Dialogue: 0,0:00:11.80,0:00:11.92,Default,,0,0,0,,input. {\u1}The{\u0}
-Dialogue: 0,0:00:11.98,0:00:12.40,Default,,0,0,0,,{\u1}function{\u0} then
-Dialogue: 0,0:00:12.40,0:00:12.48,Default,,0,0,0,,function then
-Dialogue: 0,0:00:12.48,0:00:12.68,Default,,0,0,0,,function {\u1}then{\u0}
-Dialogue: 0,0:00:12.80,0:00:13.42,Default,,0,0,0,,{\u1}calculates{\u0} the
-Dialogue: 0,0:00:13.42,0:00:13.50,Default,,0,0,0,,calculates the
-Dialogue: 0,0:00:13.50,0:00:13.62,Default,,0,0,0,,calculates {\u1}the{\u0}
-Dialogue: 0,0:00:13.66,0:00:13.94,Default,,0,0,0,,{\u1}length{\u0} of the
-Dialogue: 0,0:00:13.94,0:00:14.84,Default,,0,0,0,,length of the
-Dialogue: 0,0:00:14.84,0:00:15.00,Default,,0,0,0,,length {\u1}of{\u0} the
-Dialogue: 0,0:00:15.00,0:00:15.62,Default,,0,0,0,,length of the
-Dialogue: 0,0:00:15.62,0:00:15.74,Default,,0,0,0,,length of {\u1}the{\u0}
-Dialogue: 0,0:00:15.78,0:00:16.06,Default,,0,0,0,,{\u1}input{\u0} array and
-Dialogue: 0,0:00:16.06,0:00:16.08,Default,,0,0,0,,input array and
-Dialogue: 0,0:00:16.08,0:00:16.40,Default,,0,0,0,,input {\u1}array{\u0} and
-Dialogue: 0,0:00:16.40,0:00:16.60,Default,,0,0,0,,input array and
-Dialogue: 0,0:00:16.60,0:00:16.70,Default,,0,0,0,,input array {\u1}and{\u0}
-Dialogue: 0,0:00:16.86,0:00:17.30,Default,,0,0,0,,{\u1}stores{\u0} it in the
-Dialogue: 0,0:00:17.30,0:00:17.42,Default,,0,0,0,,stores it in the
-Dialogue: 0,0:00:17.42,0:00:17.48,Default,,0,0,0,,stores {\u1}it{\u0} in the
-Dialogue: 0,0:00:17.48,0:00:17.74,Default,,0,0,0,,stores it in the
-Dialogue: 0,0:00:17.74,0:00:17.84,Default,,0,0,0,,stores it {\u1}in{\u0} the
-Dialogue: 0,0:00:17.84,0:00:18.22,Default,,0,0,0,,stores it in the
-Dialogue: 0,0:00:18.22,0:00:18.30,Default,,0,0,0,,stores it in {\u1}the{\u0}
-Dialogue: 0,0:00:18.32,0:00:18.68,Default,,0,0,0,,{\u1}variable{\u0} n. The
-Dialogue: 0,0:00:18.68,0:00:18.86,Default,,0,0,0,,variable n. The
-Dialogue: 0,0:00:18.86,0:00:18.98,Default,,0,0,0,,variable {\u1}n.{\u0} The
-Dialogue: 0,0:00:18.98,0:00:20.44,Default,,0,0,0,,variable n. The
-Dialogue: 0,0:00:20.44,0:00:20.56,Default,,0,0,0,,variable n. {\u1}The{\u0}
-Dialogue: 0,0:00:20.60,0:00:20.96,Default,,0,0,0,,{\u1}function{\u0} then
-Dialogue: 0,0:00:20.96,0:00:21.02,Default,,0,0,0,,function then
-Dialogue: 0,0:00:21.02,0:00:21.22,Default,,0,0,0,,function {\u1}then{\u0}
-Dialogue: 0,0:00:21.36,0:00:21.76,Default,,0,0,0,,{\u1}enters{\u0} a nested
-Dialogue: 0,0:00:21.76,0:00:21.78,Default,,0,0,0,,enters a nested
-Dialogue: 0,0:00:21.78,0:00:21.80,Default,,0,0,0,,enters {\u1}a{\u0} nested
-Dialogue: 0,0:00:21.80,0:00:22.04,Default,,0,0,0,,enters a nested
-Dialogue: 0,0:00:22.05,0:00:22.43,Default,,0,0,0,,enters a {\u1}nested{\u0}
-Dialogue: 0,0:00:22.49,0:00:22.71,Default,,0,0,0,,{\u1}loop{\u0} structure
-Dialogue: 0,0:00:22.71,0:00:22.75,Default,,0,0,0,,loop structure
-Dialogue: 0,0:00:22.75,0:00:23.19,Default,,0,0,0,,loop {\u1}structure{\u0}
-Dialogue: 0,0:00:23.89,0:00:24.09,Default,,0,0,0,,{\u1}with{\u0} the outer
-Dialogue: 0,0:00:24.09,0:00:24.23,Default,,0,0,0,,with the outer
-Dialogue: 0,0:00:24.23,0:00:24.49,Default,,0,0,0,,with {\u1}the{\u0} outer
-Dialogue: 0,0:00:24.49,0:00:24.67,Default,,0,0,0,,with the outer
-Dialogue: 0,0:00:24.67,0:00:24.91,Default,,0,0,0,,with the {\u1}outer{\u0}
-Dialogue: 0,0:00:24.97,0:00:25.21,Default,,0,0,0,,{\u1}loop{\u0} running n
-Dialogue: 0,0:00:25.21,0:00:25.29,Default,,0,0,0,,loop running n
-Dialogue: 0,0:00:25.29,0:00:25.57,Default,,0,0,0,,loop {\u1}running{\u0} n
-Dialogue: 0,0:00:25.57,0:00:25.81,Default,,0,0,0,,loop running n
-Dialogue: 0,0:00:25.81,0:00:25.91,Default,,0,0,0,,loop running {\u1}n{\u0}
-Dialogue: 0,0:00:25.99,0:00:26.41,Default,,0,0,0,,{\u1}times{\u0} and the
-Dialogue: 0,0:00:26.41,0:00:26.71,Default,,0,0,0,,times and the
-Dialogue: 0,0:00:26.71,0:00:26.81,Default,,0,0,0,,times {\u1}and{\u0} the
-Dialogue: 0,0:00:26.81,0:00:26.85,Default,,0,0,0,,times and the
-Dialogue: 0,0:00:26.85,0:00:27.05,Default,,0,0,0,,times and {\u1}the{\u0}
-Dialogue: 0,0:00:27.21,0:00:27.41,Default,,0,0,0,,{\u1}inner{\u0} loop
-Dialogue: 0,0:00:27.41,0:00:27.45,Default,,0,0,0,,inner loop
-Dialogue: 0,0:00:27.45,0:00:27.67,Default,,0,0,0,,inner {\u1}loop{\u0}
-Dialogue: 0,0:00:27.73,0:00:28.03,Default,,0,0,0,,{\u1}running{\u0} ni1
-Dialogue: 0,0:00:28.03,0:00:28.25,Default,,0,0,0,,running ni1
-Dialogue: 0,0:00:28.25,0:00:28.99,Default,,0,0,0,,running {\u1}ni1{\u0}
-Dialogue: 0,0:00:29.05,0:00:29.37,Default,,0,0,0,,{\u1}times.{\u0} Inside the
-Dialogue: 0,0:00:29.37,0:00:30.48,Default,,0,0,0,,times. Inside the
-Dialogue: 0,0:00:30.48,0:00:30.92,Default,,0,0,0,,times. {\u1}Inside{\u0} the
-Dialogue: 0,0:00:30.93,0:00:30.97,Default,,0,0,0,,times. Inside the
-Dialogue: 0,0:00:30.97,0:00:31.03,Default,,0,0,0,,times. Inside {\u1}the{\u0}
-Dialogue: 0,0:00:31.13,0:00:31.31,Default,,0,0,0,,{\u1}inner{\u0} loop, the
-Dialogue: 0,0:00:31.31,0:00:31.37,Default,,0,0,0,,inner loop, the
-Dialogue: 0,0:00:31.37,0:00:31.63,Default,,0,0,0,,inner {\u1}loop,{\u0} the
-Dialogue: 0,0:00:31.63,0:00:32.47,Default,,0,0,0,,inner loop, the
-Dialogue: 0,0:00:32.47,0:00:32.57,Default,,0,0,0,,inner loop, {\u1}the{\u0}
-Dialogue: 0,0:00:32.61,0:00:33.03,Default,,0,0,0,,{\u1}function{\u0}
-Dialogue: 0,0:00:33.23,0:00:33.75,Default,,0,0,0,,{\u1}compares{\u0}
-Dialogue: 0,0:00:34.19,0:00:34.63,Default,,0,0,0,,{\u1}adjacent{\u0}
-Dialogue: 0,0:00:34.73,0:00:35.11,Default,,0,0,0,,{\u1}elements{\u0} in the
-Dialogue: 0,0:00:35.11,0:00:35.39,Default,,0,0,0,,elements in the
-Dialogue: 0,0:00:35.39,0:00:35.47,Default,,0,0,0,,elements {\u1}in{\u0} the
-Dialogue: 0,0:00:35.47,0:00:35.51,Default,,0,0,0,,elements in the
-Dialogue: 0,0:00:35.51,0:00:35.59,Default,,0,0,0,,elements in {\u1}the{\u0}
-Dialogue: 0,0:00:35.65,0:00:36.01,Default,,0,0,0,,{\u1}array{\u0} and swaps
-Dialogue: 0,0:00:36.01,0:00:36.13,Default,,0,0,0,,array and swaps
-Dialogue: 0,0:00:36.13,0:00:36.23,Default,,0,0,0,,array {\u1}and{\u0} swaps
-Dialogue: 0,0:00:36.23,0:00:36.35,Default,,0,0,0,,array and swaps
-Dialogue: 0,0:00:36.35,0:00:36.79,Default,,0,0,0,,array and {\u1}swaps{\u0}
-Dialogue: 0,0:00:36.85,0:00:37.05,Default,,0,0,0,,{\u1}them{\u0} if they are in
-Dialogue: 0,0:00:37.05,0:00:37.41,Default,,0,0,0,,them if they are in
-Dialogue: 0,0:00:37.41,0:00:37.49,Default,,0,0,0,,them {\u1}if{\u0} they are in
-Dialogue: 0,0:00:37.49,0:00:37.55,Default,,0,0,0,,them if they are in
-Dialogue: 0,0:00:37.55,0:00:37.67,Default,,0,0,0,,them if {\u1}they{\u0} are in
-Dialogue: 0,0:00:37.67,0:00:37.73,Default,,0,0,0,,them if they are in
-Dialogue: 0,0:00:37.73,0:00:37.85,Default,,0,0,0,,them if they {\u1}are{\u0} in
-Dialogue: 0,0:00:37.85,0:00:37.93,Default,,0,0,0,,them if they are in
-Dialogue: 0,0:00:37.93,0:00:38.01,Default,,0,0,0,,them if they are {\u1}in{\u0}
-Dialogue: 0,0:00:38.05,0:00:38.13,Default,,0,0,0,,{\u1}the{\u0} incorrect
-Dialogue: 0,0:00:38.13,0:00:38.25,Default,,0,0,0,,the incorrect
-Dialogue: 0,0:00:38.25,0:00:38.73,Default,,0,0,0,,the {\u1}incorrect{\u0}
-Dialogue: 0,0:00:38.89,0:00:39.11,Default,,0,0,0,,{\u1}order.{\u0} The
-Dialogue: 0,0:00:39.11,0:00:40.43,Default,,0,0,0,,order. The
-Dialogue: 0,0:00:40.43,0:00:40.81,Default,,0,0,0,,order. {\u1}The{\u0}
-Dialogue: 0,0:00:42.01,0:00:42.41,Default,,0,0,0,,{\u1}function{\u0}
-Dialogue: 0,0:00:42.55,0:00:43.09,Default,,0,0,0,,{\u1}continues{\u0} to do
-Dialogue: 0,0:00:43.09,0:00:43.15,Default,,0,0,0,,continues to do
-Dialogue: 0,0:00:43.15,0:00:43.23,Default,,0,0,0,,continues {\u1}to{\u0} do
-Dialogue: 0,0:00:43.23,0:00:43.29,Default,,0,0,0,,continues to do
-Dialogue: 0,0:00:43.29,0:00:43.43,Default,,0,0,0,,continues to {\u1}do{\u0}
-Dialogue: 0,0:00:43.47,0:00:43.69,Default,,0,0,0,,{\u1}this{\u0} until all
-Dialogue: 0,0:00:43.69,0:00:44.73,Default,,0,0,0,,this until all
-Dialogue: 0,0:00:44.74,0:00:45.28,Default,,0,0,0,,this {\u1}until{\u0} all
-Dialogue: 0,0:00:45.28,0:00:46.18,Default,,0,0,0,,this until all
-Dialogue: 0,0:00:46.18,0:00:46.36,Default,,0,0,0,,this until {\u1}all{\u0}
-Dialogue: 0,0:00:46.56,0:00:47.00,Default,,0,0,0,,{\u1}elements{\u0} in the
-Dialogue: 0,0:00:47.00,0:00:47.34,Default,,0,0,0,,elements in the
-Dialogue: 0,0:00:47.34,0:00:47.48,Default,,0,0,0,,elements {\u1}in{\u0} the
-Dialogue: 0,0:00:47.48,0:00:47.54,Default,,0,0,0,,elements in the
-Dialogue: 0,0:00:47.54,0:00:47.62,Default,,0,0,0,,elements in {\u1}the{\u0}
-Dialogue: 0,0:00:47.70,0:00:48.08,Default,,0,0,0,,{\u1}array{\u0} are in the
-Dialogue: 0,0:00:48.08,0:00:48.24,Default,,0,0,0,,array are in the
-Dialogue: 0,0:00:48.24,0:00:48.38,Default,,0,0,0,,array {\u1}are{\u0} in the
-Dialogue: 0,0:00:48.38,0:00:48.56,Default,,0,0,0,,array are in the
-Dialogue: 0,0:00:48.56,0:00:48.70,Default,,0,0,0,,array are {\u1}in{\u0} the
-Dialogue: 0,0:00:48.70,0:00:48.76,Default,,0,0,0,,array are in the
-Dialogue: 0,0:00:48.76,0:00:48.84,Default,,0,0,0,,array are in {\u1}the{\u0}
-Dialogue: 0,0:00:48.90,0:00:49.26,Default,,0,0,0,,{\u1}correct{\u0} order.
-Dialogue: 0,0:00:49.26,0:00:49.42,Default,,0,0,0,,correct order.
-Dialogue: 0,0:00:49.42,0:00:49.64,Default,,0,0,0,,correct {\u1}order.{\u0}
-Dialogue: 0,0:00:51.26,0:00:51.70,Default,,0,0,0,,{\u1}Finally,{\u0} the
-Dialogue: 0,0:00:51.70,0:00:51.76,Default,,0,0,0,,Finally, the
-Dialogue: 0,0:00:51.76,0:00:51.84,Default,,0,0,0,,Finally, {\u1}the{\u0}
-Dialogue: 0,0:00:51.90,0:00:52.24,Default,,0,0,0,,{\u1}function{\u0} returns
-Dialogue: 0,0:00:52.24,0:00:52.28,Default,,0,0,0,,function returns
-Dialogue: 0,0:00:52.28,0:00:52.74,Default,,0,0,0,,function {\u1}returns{\u0}
-Dialogue: 0,0:00:52.76,0:00:52.96,Default,,0,0,0,,{\u1}the{\u0} sorted array.
-Dialogue: 0,0:00:52.96,0:00:53.06,Default,,0,0,0,,the sorted array.
-Dialogue: 0,0:00:53.06,0:00:53.36,Default,,0,0,0,,the {\u1}sorted{\u0} array.
-Dialogue: 0,0:00:53.36,0:00:53.40,Default,,0,0,0,,the sorted array.
-Dialogue: 0,0:00:53.40,0:00:53.66,Default,,0,0,0,,the sorted {\u1}array.{\u0}
+Dialogue: 0,0:00:00.13,0:00:00.29,Default,,0,0,0,,{\u1}we{\u0} start by
+Dialogue: 0,0:00:00.29,0:00:00.41,Default,,0,0,0,,we start by
+Dialogue: 0,0:00:00.41,0:00:00.71,Default,,0,0,0,,we {\u1}start{\u0} by
+Dialogue: 0,0:00:00.71,0:00:00.77,Default,,0,0,0,,we start by
+Dialogue: 0,0:00:00.77,0:00:00.87,Default,,0,0,0,,we start {\u1}by{\u0}
+Dialogue: 0,0:00:00.91,0:00:01.53,Default,,0,0,0,,{\u1}defining{\u0} a
+Dialogue: 0,0:00:01.53,0:00:01.55,Default,,0,0,0,,defining a
+Dialogue: 0,0:00:01.55,0:00:01.57,Default,,0,0,0,,defining {\u1}a{\u0}
+Dialogue: 0,0:00:02.35,0:00:02.85,Default,,0,0,0,,{\u1}variable{\u0} x with
+Dialogue: 0,0:00:02.85,0:00:03.11,Default,,0,0,0,,variable x with
+Dialogue: 0,0:00:03.11,0:00:03.27,Default,,0,0,0,,variable {\u1}x{\u0} with
+Dialogue: 0,0:00:03.27,0:00:04.07,Default,,0,0,0,,variable x with
+Dialogue: 0,0:00:04.07,0:00:04.23,Default,,0,0,0,,variable x {\u1}with{\u0}
+Dialogue: 0,0:00:04.27,0:00:04.35,Default,,0,0,0,,{\u1}the{\u0} decimal value
+Dialogue: 0,0:00:04.35,0:00:04.41,Default,,0,0,0,,the decimal value
+Dialogue: 0,0:00:04.41,0:00:04.79,Default,,0,0,0,,the {\u1}decimal{\u0} value
+Dialogue: 0,0:00:04.79,0:00:04.83,Default,,0,0,0,,the decimal value
+Dialogue: 0,0:00:04.83,0:00:05.73,Default,,0,0,0,,the decimal {\u1}value{\u0}
+Dialogue: 0,0:00:06.49,0:00:06.65,Default,,0,0,0,,5, {\u1}which{\u0} is
+Dialogue: 0,0:00:06.65,0:00:06.71,Default,,0,0,0,,5, which is
+Dialogue: 0,0:00:06.71,0:00:06.79,Default,,0,0,0,,5, which {\u1}is{\u0}
+Dialogue: 0,0:00:06.86,0:00:07.44,Default,,0,0,0,,{\u1}represented{\u0} in
+Dialogue: 0,0:00:07.44,0:00:08.04,Default,,0,0,0,,represented in
+Dialogue: 0,0:00:08.04,0:00:08.12,Default,,0,0,0,,represented {\u1}in{\u0}
+Dialogue: 0,0:00:08.20,0:00:08.68,Default,,0,0,0,,{\u1}binary{\u0} as 00001.
+Dialogue: 0,0:00:08.68,0:00:08.74,Default,,0,0,0,,binary as 00001.
+Dialogue: 0,0:00:08.74,0:00:08.84,Default,,0,0,0,,binary {\u1}as{\u0} 00001.
+Dialogue: 0,0:00:12.89,0:00:12.99,Default,,0,0,0,,{\u1}The{\u0} next line uses
+Dialogue: 0,0:00:12.99,0:00:13.03,Default,,0,0,0,,The next line uses
+Dialogue: 0,0:00:13.03,0:00:13.23,Default,,0,0,0,,The {\u1}next{\u0} line uses
+Dialogue: 0,0:00:13.23,0:00:13.25,Default,,0,0,0,,The next line uses
+Dialogue: 0,0:00:13.25,0:00:13.45,Default,,0,0,0,,The next {\u1}line{\u0} uses
+Dialogue: 0,0:00:13.45,0:00:13.55,Default,,0,0,0,,The next line uses
+Dialogue: 0,0:00:13.55,0:00:13.85,Default,,0,0,0,,The next line {\u1}uses{\u0}
+Dialogue: 0,0:00:14.23,0:00:14.33,Default,,0,0,0,,{\u1}the{\u0} bitwise not
+Dialogue: 0,0:00:14.33,0:00:14.39,Default,,0,0,0,,the bitwise not
+Dialogue: 0,0:00:14.39,0:00:14.89,Default,,0,0,0,,the {\u1}bitwise{\u0} not
+Dialogue: 0,0:00:14.89,0:00:15.25,Default,,0,0,0,,the bitwise not
+Dialogue: 0,0:00:15.25,0:00:15.45,Default,,0,0,0,,the bitwise {\u1}not{\u0}
+Dialogue: 0,0:00:15.57,0:00:16.01,Default,,0,0,0,,{\u1}operator{\u0} to flip
+Dialogue: 0,0:00:16.01,0:00:17.15,Default,,0,0,0,,operator to flip
+Dialogue: 0,0:00:17.15,0:00:17.25,Default,,0,0,0,,operator {\u1}to{\u0} flip
+Dialogue: 0,0:00:17.25,0:00:17.37,Default,,0,0,0,,operator to flip
+Dialogue: 0,0:00:17.37,0:00:17.63,Default,,0,0,0,,operator to {\u1}flip{\u0}
+Dialogue: 0,0:00:17.73,0:00:17.85,Default,,0,0,0,,{\u1}all{\u0} the bits of X
+Dialogue: 0,0:00:17.85,0:00:17.89,Default,,0,0,0,,all the bits of X
+Dialogue: 0,0:00:17.89,0:00:17.95,Default,,0,0,0,,all {\u1}the{\u0} bits of X
+Dialogue: 0,0:00:17.95,0:00:17.99,Default,,0,0,0,,all the bits of X
+Dialogue: 0,0:00:17.99,0:00:18.25,Default,,0,0,0,,all the {\u1}bits{\u0} of X
+Dialogue: 0,0:00:18.25,0:00:18.29,Default,,0,0,0,,all the bits of X
+Dialogue: 0,0:00:18.29,0:00:18.35,Default,,0,0,0,,all the bits {\u1}of{\u0} X
+Dialogue: 0,0:00:18.35,0:00:18.67,Default,,0,0,0,,all the bits of X
+Dialogue: 0,0:00:18.67,0:00:18.81,Default,,0,0,0,,all the bits of {\u1}X{\u0}
+Dialogue: 0,0:00:19.23,0:00:19.69,Default,,0,0,0,,{\u1}resulting{\u0} in the
+Dialogue: 0,0:00:19.69,0:00:19.73,Default,,0,0,0,,resulting in the
+Dialogue: 0,0:00:19.73,0:00:19.77,Default,,0,0,0,,resulting {\u1}in{\u0} the
+Dialogue: 0,0:00:19.77,0:00:19.81,Default,,0,0,0,,resulting in the
+Dialogue: 0,0:00:19.81,0:00:19.87,Default,,0,0,0,,resulting in {\u1}the{\u0}
+Dialogue: 0,0:00:19.91,0:00:20.33,Default,,0,0,0,,{\u1}binary{\u0}
+Dialogue: 0,0:00:20.39,0:00:21.11,Default,,0,0,0,,{\u1}representation,{\u0}
+Dialogue: 0,0:00:24.41,0:00:24.55,Default,,0,0,0,,{\u1}which{\u0} is
+Dialogue: 0,0:00:24.55,0:00:24.61,Default,,0,0,0,,which is
+Dialogue: 0,0:00:24.61,0:00:24.67,Default,,0,0,0,,which {\u1}is{\u0}
+Dialogue: 0,0:00:24.73,0:00:25.17,Default,,0,0,0,,{\u1}equivalent{\u0} to the
+Dialogue: 0,0:00:25.17,0:00:25.21,Default,,0,0,0,,equivalent to the
+Dialogue: 0,0:00:25.21,0:00:25.31,Default,,0,0,0,,equivalent {\u1}to{\u0} the
+Dialogue: 0,0:00:25.31,0:00:25.33,Default,,0,0,0,,equivalent to the
+Dialogue: 0,0:00:25.33,0:00:25.39,Default,,0,0,0,,equivalent to {\u1}the{\u0}
+Dialogue: 0,0:00:25.45,0:00:25.79,Default,,0,0,0,,{\u1}decimal{\u0} value. We
+Dialogue: 0,0:00:25.79,0:00:25.83,Default,,0,0,0,,decimal value. We
+Dialogue: 0,0:00:25.83,0:00:26.23,Default,,0,0,0,,decimal {\u1}value.{\u0} We
+Dialogue: 0,0:00:26.23,0:00:27.77,Default,,0,0,0,,decimal value. We
+Dialogue: 0,0:00:27.77,0:00:27.91,Default,,0,0,0,,decimal value. {\u1}We{\u0}
+Dialogue: 0,0:00:27.93,0:00:28.11,Default,,0,0,0,,{\u1}then{\u0} use the
+Dialogue: 0,0:00:28.11,0:00:28.23,Default,,0,0,0,,then use the
+Dialogue: 0,0:00:28.23,0:00:28.39,Default,,0,0,0,,then {\u1}use{\u0} the
+Dialogue: 0,0:00:28.39,0:00:28.41,Default,,0,0,0,,then use the
+Dialogue: 0,0:00:28.41,0:00:28.47,Default,,0,0,0,,then use {\u1}the{\u0}
+Dialogue: 0,0:00:28.51,0:00:28.85,Default,,0,0,0,,{\u1}bitwise{\u0} and
+Dialogue: 0,0:00:28.85,0:00:28.93,Default,,0,0,0,,bitwise and
+Dialogue: 0,0:00:28.93,0:00:29.09,Default,,0,0,0,,bitwise {\u1}and{\u0}
+Dialogue: 0,0:00:29.17,0:00:29.63,Default,,0,0,0,,{\u1}operator{\u0} to keep
+Dialogue: 0,0:00:29.63,0:00:30.17,Default,,0,0,0,,operator to keep
+Dialogue: 0,0:00:30.17,0:00:30.27,Default,,0,0,0,,operator {\u1}to{\u0} keep
+Dialogue: 0,0:00:30.27,0:00:30.31,Default,,0,0,0,,operator to keep
+Dialogue: 0,0:00:30.31,0:00:30.49,Default,,0,0,0,,operator to {\u1}keep{\u0}
+Dialogue: 0,0:00:30.59,0:00:30.79,Default,,0,0,0,,{\u1}only{\u0} the bits of
+Dialogue: 0,0:00:30.79,0:00:30.83,Default,,0,0,0,,only the bits of
+Dialogue: 0,0:00:30.83,0:00:30.91,Default,,0,0,0,,only {\u1}the{\u0} bits of
+Dialogue: 0,0:00:30.91,0:00:30.93,Default,,0,0,0,,only the bits of
+Dialogue: 0,0:00:30.93,0:00:31.11,Default,,0,0,0,,only the {\u1}bits{\u0} of
+Dialogue: 0,0:00:31.11,0:00:31.17,Default,,0,0,0,,only the bits of
+Dialogue: 0,0:00:31.17,0:00:31.21,Default,,0,0,0,,only the bits {\u1}of{\u0}
+Dialogue: 0,0:00:31.25,0:00:31.67,Default,,0,0,0,,{\u1}position{\u0} 0 and 1 of
+Dialogue: 0,0:00:31.67,0:00:32.05,Default,,0,0,0,,position 0 and 1 of
+Dialogue: 0,0:00:32.05,0:00:32.13,Default,,0,0,0,,position 0 {\u1}and{\u0} 1 of
+Dialogue: 0,0:00:32.13,0:00:32.35,Default,,0,0,0,,position 0 and 1 of
+Dialogue: 0,0:00:32.35,0:00:32.41,Default,,0,0,0,,position 0 and 1 {\u1}of{\u0}
+Dialogue: 0,0:00:32.71,0:00:32.87,Default,,0,0,0,,{\u1}Y{\u0} resulting in the
+Dialogue: 0,0:00:32.87,0:00:33.75,Default,,0,0,0,,Y resulting in the
+Dialogue: 0,0:00:33.75,0:00:34.15,Default,,0,0,0,,Y {\u1}resulting{\u0} in the
+Dialogue: 0,0:00:34.15,0:00:34.19,Default,,0,0,0,,Y resulting in the
+Dialogue: 0,0:00:34.19,0:00:34.25,Default,,0,0,0,,Y resulting {\u1}in{\u0} the
+Dialogue: 0,0:00:34.25,0:00:34.29,Default,,0,0,0,,Y resulting in the
+Dialogue: 0,0:00:34.29,0:00:34.35,Default,,0,0,0,,Y resulting in {\u1}the{\u0}
+Dialogue: 0,0:00:34.39,0:00:34.75,Default,,0,0,0,,{\u1}binary{\u0}
+Dialogue: 0,0:00:34.81,0:00:35.61,Default,,0,0,0,,{\u1}representation{\u0}
+Dialogue: 0,0:00:38.49,0:00:38.63,Default,,0,0,0,,{\u1}which{\u0} is
+Dialogue: 0,0:00:38.63,0:00:38.69,Default,,0,0,0,,which is
+Dialogue: 0,0:00:38.69,0:00:38.77,Default,,0,0,0,,which {\u1}is{\u0}
+Dialogue: 0,0:00:38.83,0:00:39.25,Default,,0,0,0,,{\u1}equivalent{\u0} to the
+Dialogue: 0,0:00:39.25,0:00:39.29,Default,,0,0,0,,equivalent to the
+Dialogue: 0,0:00:39.29,0:00:39.41,Default,,0,0,0,,equivalent {\u1}to{\u0} the
+Dialogue: 0,0:00:39.41,0:00:39.43,Default,,0,0,0,,equivalent to the
+Dialogue: 0,0:00:39.43,0:00:39.49,Default,,0,0,0,,equivalent to {\u1}the{\u0}
+Dialogue: 0,0:00:39.55,0:00:39.95,Default,,0,0,0,,{\u1}decimal{\u0} value 2.
+Dialogue: 0,0:00:39.95,0:00:39.99,Default,,0,0,0,,decimal value 2.
+Dialogue: 0,0:00:39.99,0:00:40.31,Default,,0,0,0,,decimal {\u1}value{\u0} 2.
+Dialogue: 0,0:00:42.12,0:00:42.56,Default,,0,0,0,,{\u1}Finally,{\u0} we use
+Dialogue: 0,0:00:42.56,0:00:42.62,Default,,0,0,0,,Finally, we use
+Dialogue: 0,0:00:42.62,0:00:42.76,Default,,0,0,0,,Finally, {\u1}we{\u0} use
+Dialogue: 0,0:00:42.76,0:00:42.90,Default,,0,0,0,,Finally, we use
+Dialogue: 0,0:00:42.90,0:00:43.10,Default,,0,0,0,,Finally, we {\u1}use{\u0}
+Dialogue: 0,0:00:43.14,0:00:43.32,Default,,0,0,0,,{\u1}the{\u0} in function to
+Dialogue: 0,0:00:43.32,0:00:43.72,Default,,0,0,0,,the in function to
+Dialogue: 0,0:00:43.72,0:00:43.94,Default,,0,0,0,,the {\u1}in{\u0} function to
+Dialogue: 0,0:00:43.94,0:00:44.06,Default,,0,0,0,,the in function to
+Dialogue: 0,0:00:44.06,0:00:44.56,Default,,0,0,0,,the in {\u1}function{\u0} to
+Dialogue: 0,0:00:44.56,0:00:45.26,Default,,0,0,0,,the in function to
+Dialogue: 0,0:00:45.27,0:00:45.39,Default,,0,0,0,,the in function {\u1}to{\u0}
+Dialogue: 0,0:00:45.47,0:00:45.75,Default,,0,0,0,,{\u1}print{\u0} to the
+Dialogue: 0,0:00:45.75,0:00:45.77,Default,,0,0,0,,print to the
+Dialogue: 0,0:00:45.77,0:00:45.81,Default,,0,0,0,,print {\u1}to{\u0} the
+Dialogue: 0,0:00:45.81,0:00:45.89,Default,,0,0,0,,print to the
+Dialogue: 0,0:00:45.89,0:00:45.97,Default,,0,0,0,,print to {\u1}the{\u0}
+Dialogue: 0,0:00:46.05,0:00:46.59,Default,,0,0,0,,{\u1}binary{\u0}
+Dialogue: 0,0:00:46.67,0:00:47.53,Default,,0,0,0,,{\u1}representation{\u0}
+Dialogue: 0,0:00:47.63,0:00:47.71,Default,,0,0,0,,{\u1}of{\u0} Z which outputs
+Dialogue: 0,0:00:47.71,0:00:47.87,Default,,0,0,0,,of Z which outputs
+Dialogue: 0,0:00:47.87,0:00:48.19,Default,,0,0,0,,of {\u1}Z{\u0} which outputs
+Dialogue: 0,0:00:48.19,0:00:48.75,Default,,0,0,0,,of Z which outputs
+Dialogue: 0,0:00:48.76,0:00:48.94,Default,,0,0,0,,of Z {\u1}which{\u0} outputs
+Dialogue: 0,0:00:48.94,0:00:49.08,Default,,0,0,0,,of Z which outputs
+Dialogue: 0,0:00:49.08,0:00:49.56,Default,,0,0,0,,of Z which {\u1}outputs{\u0}
+Dialogue: 0,0:00:49.74,0:00:50.14,Default,,0,0,0,,{\u1}zero{\u0} be 10
+Dialogue: 0,0:00:50.14,0:00:50.18,Default,,0,0,0,,zero be 10
+Dialogue: 0,0:00:50.18,0:00:50.38,Default,,0,0,0,,zero {\u1}be{\u0} 10

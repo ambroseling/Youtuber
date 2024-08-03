@@ -217,5 +217,5 @@ def main(concept):
 
 
 if __name__ == "__main__":
-    concept = input("What would you like to generate?")
+    concept = input("What would you like to generate?:  ")
     main(concept)
