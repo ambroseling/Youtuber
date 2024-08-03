@@ -1,5 +1,6 @@
-env
+.env
 /env
 process_dir
 process_split_dir
 videos/roblox.mp4
+stable-diffusion-3-medium/
