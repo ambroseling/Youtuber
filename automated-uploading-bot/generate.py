@@ -57,7 +57,7 @@ def speed_up_audio(input_file, output_file, speed_factor):
 
 
 def create_video(image_file, audio_file, subtitle_file, output_file):
-    # FFmpeg command to combine image, audio, and subtitles into a video
+    # FFmpeg command to combine image, audio, and subtitles into a 40-second video
     command = [
         'ffmpeg',
         '-loop', '1',                   # Loop the image
@@ -66,16 +66,17 @@ def create_video(image_file, audio_file, subtitle_file, output_file):
         '-vf', f"ass={subtitle_file}",  # Video filter for ASS subtitles
         '-c:v', 'libx264',              # Video codec
         '-c:a', 'aac',                  # Audio codec
-        '-pix_fmt', 'yuv420p',          # Pixel format
+        '-pix_fmt', 'yuv420p',           # Pixel format
         '-b:a', '192k',                 # Audio bitrate
         '-movflags', 'faststart',       # Optimize for streaming
-        '-shortest',                    # Match the shortest input duration
+        '-t', '40',                     # Set duration to 40 seconds
         '-f', 'mp4',                    # Output format
         output_file                     # Output file
     ]
 
     # Run the command
     subprocess.run(command, check=True)
+
 
 def update_ass_styles(input_file, output_file, new_styles):
     with open(input_file, 'r', encoding='utf-8') as file:
