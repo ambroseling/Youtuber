@@ -11,247 +11,168 @@ Style: Default,Arial,12,&H00FF00FF,&H000000FF,&H00000000,&H64000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.25,0:00:00.41,Default,,0,0,0,,{\u1}We're{\u0} defining a
-Dialogue: 0,0:00:00.41,0:00:00.43,Default,,0,0,0,,We're defining a
-Dialogue: 0,0:00:00.43,0:00:00.79,Default,,0,0,0,,We're {\u1}defining{\u0} a
-Dialogue: 0,0:00:00.79,0:00:00.89,Default,,0,0,0,,We're defining a
-Dialogue: 0,0:00:00.89,0:00:00.91,Default,,0,0,0,,We're defining {\u1}a{\u0}
-Dialogue: 0,0:00:00.95,0:00:01.17,Default,,0,0,0,,{\u1}function{\u0} called
-Dialogue: 0,0:00:01.17,0:00:01.21,Default,,0,0,0,,function called
-Dialogue: 0,0:00:01.21,0:00:01.39,Default,,0,0,0,,function {\u1}called{\u0}
-Dialogue: 0,0:00:01.45,0:00:01.65,Default,,0,0,0,,{\u1}bubble{\u0} sort that
-Dialogue: 0,0:00:01.65,0:00:01.67,Default,,0,0,0,,bubble sort that
-Dialogue: 0,0:00:01.67,0:00:01.85,Default,,0,0,0,,bubble {\u1}sort{\u0} that
-Dialogue: 0,0:00:01.85,0:00:02.63,Default,,0,0,0,,bubble sort that
-Dialogue: 0,0:00:02.63,0:00:02.81,Default,,0,0,0,,bubble sort {\u1}that{\u0}
-Dialogue: 0,0:00:02.85,0:00:03.03,Default,,0,0,0,,{\u1}takes{\u0} an array as
-Dialogue: 0,0:00:03.03,0:00:03.05,Default,,0,0,0,,takes an array as
-Dialogue: 0,0:00:03.05,0:00:03.09,Default,,0,0,0,,takes {\u1}an{\u0} array as
-Dialogue: 0,0:00:03.09,0:00:03.11,Default,,0,0,0,,takes an array as
-Dialogue: 0,0:00:03.11,0:00:03.37,Default,,0,0,0,,takes an {\u1}array{\u0} as
-Dialogue: 0,0:00:03.37,0:00:03.59,Default,,0,0,0,,takes an array as
-Dialogue: 0,0:00:03.59,0:00:03.75,Default,,0,0,0,,takes an array {\u1}as{\u0}
-Dialogue: 0,0:00:03.89,0:00:04.17,Default,,0,0,0,,{\u1}input.{\u0} We're
-Dialogue: 0,0:00:04.17,0:00:04.97,Default,,0,0,0,,input. We're
-Dialogue: 0,0:00:04.97,0:00:05.09,Default,,0,0,0,,input. {\u1}We're{\u0}
-Dialogue: 0,0:00:05.11,0:00:05.31,Default,,0,0,0,,{\u1}getting{\u0} the
-Dialogue: 0,0:00:05.31,0:00:05.39,Default,,0,0,0,,getting the
-Dialogue: 0,0:00:05.39,0:00:05.59,Default,,0,0,0,,getting {\u1}the{\u0}
-Dialogue: 0,0:00:06.25,0:00:06.47,Default,,0,0,0,,{\u1}length{\u0} of the
-Dialogue: 0,0:00:06.47,0:00:06.91,Default,,0,0,0,,length of the
-Dialogue: 0,0:00:06.91,0:00:06.99,Default,,0,0,0,,length {\u1}of{\u0} the
-Dialogue: 0,0:00:06.99,0:00:07.37,Default,,0,0,0,,length of the
-Dialogue: 0,0:00:07.37,0:00:07.55,Default,,0,0,0,,length of {\u1}the{\u0}
-Dialogue: 0,0:00:07.67,0:00:07.91,Default,,0,0,0,,{\u1}array,{\u0} which
-Dialogue: 0,0:00:07.91,0:00:08.11,Default,,0,0,0,,array, which
-Dialogue: 0,0:00:08.11,0:00:08.21,Default,,0,0,0,,array, {\u1}which{\u0}
-Dialogue: 0,0:00:08.23,0:00:08.35,Default,,0,0,0,,{\u1}we'll{\u0} use to
-Dialogue: 0,0:00:08.35,0:00:08.41,Default,,0,0,0,,we'll use to
-Dialogue: 0,0:00:08.41,0:00:08.51,Default,,0,0,0,,we'll {\u1}use{\u0} to
-Dialogue: 0,0:00:08.51,0:00:08.53,Default,,0,0,0,,we'll use to
-Dialogue: 0,0:00:08.53,0:00:08.57,Default,,0,0,0,,we'll use {\u1}to{\u0}
-Dialogue: 0,0:00:08.61,0:00:08.81,Default,,0,0,0,,{\u1}control{\u0} the
-Dialogue: 0,0:00:08.81,0:00:08.83,Default,,0,0,0,,control the
-Dialogue: 0,0:00:08.83,0:00:08.89,Default,,0,0,0,,control {\u1}the{\u0}
-Dialogue: 0,0:00:08.91,0:00:09.03,Default,,0,0,0,,{\u1}number{\u0} of
-Dialogue: 0,0:00:09.03,0:00:09.05,Default,,0,0,0,,number of
-Dialogue: 0,0:00:09.05,0:00:09.09,Default,,0,0,0,,number {\u1}of{\u0}
-Dialogue: 0,0:00:09.11,0:00:09.43,Default,,0,0,0,,{\u1}iterations{\u0} in the
-Dialogue: 0,0:00:09.43,0:00:09.45,Default,,0,0,0,,iterations in the
-Dialogue: 0,0:00:09.45,0:00:09.49,Default,,0,0,0,,iterations {\u1}in{\u0} the
-Dialogue: 0,0:00:09.49,0:00:09.51,Default,,0,0,0,,iterations in the
-Dialogue: 0,0:00:09.51,0:00:09.57,Default,,0,0,0,,iterations in {\u1}the{\u0}
-Dialogue: 0,0:00:09.59,0:00:09.75,Default,,0,0,0,,{\u1}sorting{\u0} process.
-Dialogue: 0,0:00:09.75,0:00:09.77,Default,,0,0,0,,sorting process.
-Dialogue: 0,0:00:09.77,0:00:10.01,Default,,0,0,0,,sorting {\u1}process.{\u0}
-Dialogue: 0,0:00:10.91,0:00:11.03,Default,,0,0,0,,{\u1}We're{\u0} using an
-Dialogue: 0,0:00:11.03,0:00:11.05,Default,,0,0,0,,We're using an
-Dialogue: 0,0:00:11.05,0:00:11.19,Default,,0,0,0,,We're {\u1}using{\u0} an
-Dialogue: 0,0:00:11.19,0:00:11.21,Default,,0,0,0,,We're using an
-Dialogue: 0,0:00:11.21,0:00:11.25,Default,,0,0,0,,We're using {\u1}an{\u0}
-Dialogue: 0,0:00:11.33,0:00:11.57,Default,,0,0,0,,{\u1}SLoop{\u0} to iterate
-Dialogue: 0,0:00:11.57,0:00:11.59,Default,,0,0,0,,SLoop to iterate
-Dialogue: 0,0:00:11.59,0:00:11.63,Default,,0,0,0,,SLoop {\u1}to{\u0} iterate
-Dialogue: 0,0:00:11.63,0:00:11.67,Default,,0,0,0,,SLoop to iterate
-Dialogue: 0,0:00:11.67,0:00:11.87,Default,,0,0,0,,SLoop to {\u1}iterate{\u0}
-Dialogue: 0,0:00:11.89,0:00:12.03,Default,,0,0,0,,{\u1}through{\u0} the
-Dialogue: 0,0:00:12.03,0:00:12.05,Default,,0,0,0,,through the
-Dialogue: 0,0:00:12.05,0:00:12.11,Default,,0,0,0,,through {\u1}the{\u0}
-Dialogue: 0,0:00:12.13,0:00:12.37,Default,,0,0,0,,{\u1}array.{\u0} The outer
-Dialogue: 0,0:00:12.37,0:00:12.65,Default,,0,0,0,,array. The outer
-Dialogue: 0,0:00:12.65,0:00:12.73,Default,,0,0,0,,array. {\u1}The{\u0} outer
-Dialogue: 0,0:00:12.73,0:00:12.77,Default,,0,0,0,,array. The outer
-Dialogue: 0,0:00:12.77,0:00:12.91,Default,,0,0,0,,array. The {\u1}outer{\u0}
-Dialogue: 0,0:00:12.93,0:00:13.03,Default,,0,0,0,,{\u1}loop{\u0} will run n
-Dialogue: 0,0:00:13.03,0:00:13.05,Default,,0,0,0,,loop will run n
-Dialogue: 0,0:00:13.05,0:00:13.15,Default,,0,0,0,,loop {\u1}will{\u0} run n
-Dialogue: 0,0:00:13.15,0:00:13.17,Default,,0,0,0,,loop will run n
-Dialogue: 0,0:00:13.17,0:00:13.27,Default,,0,0,0,,loop will {\u1}run{\u0} n
-Dialogue: 0,0:00:13.27,0:00:13.35,Default,,0,0,0,,loop will run n
-Dialogue: 0,0:00:13.35,0:00:13.41,Default,,0,0,0,,loop will run {\u1}n{\u0}
-Dialogue: 0,0:00:13.43,0:00:13.67,Default,,0,0,0,,{\u1}times,{\u0} and the
-Dialogue: 0,0:00:13.67,0:00:13.69,Default,,0,0,0,,times, and the
-Dialogue: 0,0:00:13.69,0:00:14.17,Default,,0,0,0,,times, {\u1}and{\u0} the
-Dialogue: 0,0:00:14.18,0:00:14.20,Default,,0,0,0,,times, and the
-Dialogue: 0,0:00:14.20,0:00:14.26,Default,,0,0,0,,times, and {\u1}the{\u0}
-Dialogue: 0,0:00:14.28,0:00:14.38,Default,,0,0,0,,{\u1}inner{\u0} loop will
-Dialogue: 0,0:00:14.38,0:00:14.40,Default,,0,0,0,,inner loop will
-Dialogue: 0,0:00:14.40,0:00:14.52,Default,,0,0,0,,inner {\u1}loop{\u0} will
-Dialogue: 0,0:00:14.52,0:00:14.54,Default,,0,0,0,,inner loop will
-Dialogue: 0,0:00:14.54,0:00:14.64,Default,,0,0,0,,inner loop {\u1}will{\u0}
-Dialogue: 0,0:00:14.66,0:00:14.78,Default,,0,0,0,,{\u1}run{\u0} ni one times,
-Dialogue: 0,0:00:14.78,0:00:14.84,Default,,0,0,0,,run ni one times,
-Dialogue: 0,0:00:14.84,0:00:14.96,Default,,0,0,0,,run {\u1}ni{\u0} one times,
-Dialogue: 0,0:00:14.96,0:00:15.04,Default,,0,0,0,,run ni one times,
-Dialogue: 0,0:00:15.04,0:00:15.12,Default,,0,0,0,,run ni {\u1}one{\u0} times,
-Dialogue: 0,0:00:15.12,0:00:15.14,Default,,0,0,0,,run ni one times,
-Dialogue: 0,0:00:15.14,0:00:15.36,Default,,0,0,0,,run ni one {\u1}times,{\u0}
-Dialogue: 0,0:00:15.70,0:00:15.80,Default,,0,0,0,,{\u1}where{\u0} n is the
-Dialogue: 0,0:00:15.80,0:00:15.86,Default,,0,0,0,,where n is the
-Dialogue: 0,0:00:15.86,0:00:15.90,Default,,0,0,0,,where {\u1}n{\u0} is the
-Dialogue: 0,0:00:15.90,0:00:15.94,Default,,0,0,0,,where n is the
-Dialogue: 0,0:00:15.94,0:00:16.00,Default,,0,0,0,,where n {\u1}is{\u0} the
-Dialogue: 0,0:00:16.00,0:00:16.02,Default,,0,0,0,,where n is the
-Dialogue: 0,0:00:16.02,0:00:16.08,Default,,0,0,0,,where n is {\u1}the{\u0}
-Dialogue: 0,0:00:16.10,0:00:16.24,Default,,0,0,0,,{\u1}length{\u0} of the
-Dialogue: 0,0:00:16.24,0:00:16.26,Default,,0,0,0,,length of the
-Dialogue: 0,0:00:16.26,0:00:16.30,Default,,0,0,0,,length {\u1}of{\u0} the
-Dialogue: 0,0:00:16.30,0:00:16.32,Default,,0,0,0,,length of the
-Dialogue: 0,0:00:16.32,0:00:16.38,Default,,0,0,0,,length of {\u1}the{\u0}
-Dialogue: 0,0:00:16.42,0:00:16.62,Default,,0,0,0,,{\u1}array,{\u0} ni is the
-Dialogue: 0,0:00:16.62,0:00:16.96,Default,,0,0,0,,array, ni is the
-Dialogue: 0,0:00:16.96,0:00:17.06,Default,,0,0,0,,array, {\u1}ni{\u0} is the
-Dialogue: 0,0:00:17.06,0:00:17.08,Default,,0,0,0,,array, ni is the
-Dialogue: 0,0:00:17.08,0:00:17.16,Default,,0,0,0,,array, ni {\u1}is{\u0} the
-Dialogue: 0,0:00:17.16,0:00:17.18,Default,,0,0,0,,array, ni is the
-Dialogue: 0,0:00:17.18,0:00:17.24,Default,,0,0,0,,array, ni is {\u1}the{\u0}
-Dialogue: 0,0:00:17.26,0:00:17.40,Default,,0,0,0,,{\u1}current{\u0}
-Dialogue: 0,0:00:17.42,0:00:17.66,Default,,0,0,0,,{\u1}iteration{\u0} of the
-Dialogue: 0,0:00:17.66,0:00:17.68,Default,,0,0,0,,iteration of the
-Dialogue: 0,0:00:17.68,0:00:17.72,Default,,0,0,0,,iteration {\u1}of{\u0} the
-Dialogue: 0,0:00:17.72,0:00:17.74,Default,,0,0,0,,iteration of the
-Dialogue: 0,0:00:17.74,0:00:17.80,Default,,0,0,0,,iteration of {\u1}the{\u0}
-Dialogue: 0,0:00:17.82,0:00:17.96,Default,,0,0,0,,{\u1}outer{\u0} loop.
-Dialogue: 0,0:00:17.96,0:00:17.98,Default,,0,0,0,,outer loop.
-Dialogue: 0,0:00:17.98,0:00:18.14,Default,,0,0,0,,outer {\u1}loop.{\u0}
-Dialogue: 0,0:00:18.78,0:00:19.04,Default,,0,0,0,,{\u1}Inside{\u0} the inner
-Dialogue: 0,0:00:19.04,0:00:19.06,Default,,0,0,0,,Inside the inner
-Dialogue: 0,0:00:19.06,0:00:19.12,Default,,0,0,0,,Inside {\u1}the{\u0} inner
-Dialogue: 0,0:00:19.12,0:00:19.16,Default,,0,0,0,,Inside the inner
-Dialogue: 0,0:00:19.16,0:00:19.30,Default,,0,0,0,,Inside the {\u1}inner{\u0}
-Dialogue: 0,0:00:19.32,0:00:19.44,Default,,0,0,0,,{\u1}loop,{\u0} We're
-Dialogue: 0,0:00:19.44,0:00:20.42,Default,,0,0,0,,loop, We're
-Dialogue: 0,0:00:20.42,0:00:20.52,Default,,0,0,0,,loop, {\u1}We're{\u0}
-Dialogue: 0,0:00:20.54,0:00:20.78,Default,,0,0,0,,{\u1}comparing{\u0}
-Dialogue: 0,0:00:20.82,0:00:21.06,Default,,0,0,0,,{\u1}adjacent{\u0}
-Dialogue: 0,0:00:21.10,0:00:21.34,Default,,0,0,0,,{\u1}elements{\u0} in the
-Dialogue: 0,0:00:21.34,0:00:21.78,Default,,0,0,0,,elements in the
-Dialogue: 0,0:00:21.78,0:00:21.84,Default,,0,0,0,,elements {\u1}in{\u0} the
-Dialogue: 0,0:00:21.84,0:00:21.86,Default,,0,0,0,,elements in the
-Dialogue: 0,0:00:21.86,0:00:21.94,Default,,0,0,0,,elements in {\u1}the{\u0}
-Dialogue: 0,0:00:21.96,0:00:22.18,Default,,0,0,0,,{\u1}array.{\u0} If the
-Dialogue: 0,0:00:22.18,0:00:22.56,Default,,0,0,0,,array. If the
-Dialogue: 0,0:00:22.56,0:00:22.62,Default,,0,0,0,,array. {\u1}If{\u0} the
-Dialogue: 0,0:00:22.62,0:00:22.64,Default,,0,0,0,,array. If the
-Dialogue: 0,0:00:22.64,0:00:22.70,Default,,0,0,0,,array. If {\u1}the{\u0}
-Dialogue: 0,0:00:22.72,0:00:22.92,Default,,0,0,0,,{\u1}current{\u0} element
-Dialogue: 0,0:00:22.92,0:00:22.94,Default,,0,0,0,,current element
-Dialogue: 0,0:00:22.94,0:00:23.18,Default,,0,0,0,,current {\u1}element{\u0}
-Dialogue: 0,0:00:23.54,0:00:23.60,Default,,0,0,0,,{\u1}is{\u0} greater than
-Dialogue: 0,0:00:23.60,0:00:23.62,Default,,0,0,0,,is greater than
-Dialogue: 0,0:00:23.62,0:00:23.80,Default,,0,0,0,,is {\u1}greater{\u0} than
-Dialogue: 0,0:00:23.80,0:00:23.82,Default,,0,0,0,,is greater than
-Dialogue: 0,0:00:23.82,0:00:23.90,Default,,0,0,0,,is greater {\u1}than{\u0}
-Dialogue: 0,0:00:23.92,0:00:23.98,Default,,0,0,0,,{\u1}the{\u0} next one, we
-Dialogue: 0,0:00:23.98,0:00:24.00,Default,,0,0,0,,the next one, we
-Dialogue: 0,0:00:24.00,0:00:24.08,Default,,0,0,0,,the {\u1}next{\u0} one, we
-Dialogue: 0,0:00:24.08,0:00:24.14,Default,,0,0,0,,the next one, we
-Dialogue: 0,0:00:24.14,0:00:24.24,Default,,0,0,0,,the next {\u1}one,{\u0} we
-Dialogue: 0,0:00:24.24,0:00:24.64,Default,,0,0,0,,the next one, we
-Dialogue: 0,0:00:24.64,0:00:24.74,Default,,0,0,0,,the next one, {\u1}we{\u0}
-Dialogue: 0,0:00:24.76,0:00:24.94,Default,,0,0,0,,{\u1}swap{\u0} them. This
-Dialogue: 0,0:00:24.94,0:00:24.96,Default,,0,0,0,,swap them. This
-Dialogue: 0,0:00:24.96,0:00:25.08,Default,,0,0,0,,swap {\u1}them.{\u0} This
-Dialogue: 0,0:00:25.08,0:00:25.74,Default,,0,0,0,,swap them. This
-Dialogue: 0,0:00:25.74,0:00:25.90,Default,,0,0,0,,swap them. {\u1}This{\u0}
-Dialogue: 0,0:00:26.32,0:00:26.52,Default,,0,0,0,,{\u1}swapping{\u0} process
-Dialogue: 0,0:00:26.52,0:00:26.54,Default,,0,0,0,,swapping process
-Dialogue: 0,0:00:26.54,0:00:26.80,Default,,0,0,0,,swapping {\u1}process{\u0}
-Dialogue: 0,0:00:26.82,0:00:27.20,Default,,0,0,0,,{\u1}continues{\u0} until
-Dialogue: 0,0:00:27.20,0:00:27.28,Default,,0,0,0,,continues until
-Dialogue: 0,0:00:27.28,0:00:27.52,Default,,0,0,0,,continues {\u1}until{\u0}
-Dialogue: 0,0:00:27.72,0:00:27.80,Default,,0,0,0,,{\u1}the{\u0} end of the
-Dialogue: 0,0:00:27.80,0:00:27.90,Default,,0,0,0,,the end of the
-Dialogue: 0,0:00:27.90,0:00:28.04,Default,,0,0,0,,the {\u1}end{\u0} of the
-Dialogue: 0,0:00:28.04,0:00:28.08,Default,,0,0,0,,the end of the
-Dialogue: 0,0:00:28.08,0:00:28.12,Default,,0,0,0,,the end {\u1}of{\u0} the
-Dialogue: 0,0:00:28.12,0:00:28.16,Default,,0,0,0,,the end of the
-Dialogue: 0,0:00:28.16,0:00:28.32,Default,,0,0,0,,the end of {\u1}the{\u0}
-Dialogue: 0,0:00:28.80,0:00:28.92,Default,,0,0,0,,{\u1}inner{\u0} loop, at
-Dialogue: 0,0:00:28.92,0:00:28.96,Default,,0,0,0,,inner loop, at
-Dialogue: 0,0:00:28.96,0:00:29.16,Default,,0,0,0,,inner {\u1}loop,{\u0} at
-Dialogue: 0,0:00:29.16,0:00:29.36,Default,,0,0,0,,inner loop, at
-Dialogue: 0,0:00:29.36,0:00:29.42,Default,,0,0,0,,inner loop, {\u1}at{\u0}
-Dialogue: 0,0:00:29.44,0:00:29.54,Default,,0,0,0,,{\u1}which{\u0} point we're
-Dialogue: 0,0:00:29.54,0:00:29.58,Default,,0,0,0,,which point we're
-Dialogue: 0,0:00:29.58,0:00:29.70,Default,,0,0,0,,which {\u1}point{\u0} we're
-Dialogue: 0,0:00:29.70,0:00:29.72,Default,,0,0,0,,which point we're
-Dialogue: 0,0:00:29.72,0:00:29.82,Default,,0,0,0,,which point {\u1}we're{\u0}
-Dialogue: 0,0:00:29.84,0:00:30.18,Default,,0,0,0,,{\u1}guaranteed{\u0} that
-Dialogue: 0,0:00:30.18,0:00:30.54,Default,,0,0,0,,guaranteed that
-Dialogue: 0,0:00:30.54,0:00:30.68,Default,,0,0,0,,guaranteed {\u1}that{\u0}
-Dialogue: 0,0:00:30.74,0:00:30.90,Default,,0,0,0,,{\u1}the{\u0} largest
-Dialogue: 0,0:00:30.90,0:00:31.02,Default,,0,0,0,,the largest
-Dialogue: 0,0:00:31.02,0:00:31.28,Default,,0,0,0,,the {\u1}largest{\u0}
-Dialogue: 0,0:00:31.30,0:00:31.52,Default,,0,0,0,,{\u1}element{\u0} in the
-Dialogue: 0,0:00:31.52,0:00:31.58,Default,,0,0,0,,element in the
-Dialogue: 0,0:00:31.58,0:00:31.64,Default,,0,0,0,,element {\u1}in{\u0} the
-Dialogue: 0,0:00:31.64,0:00:31.66,Default,,0,0,0,,element in the
-Dialogue: 0,0:00:31.66,0:00:31.72,Default,,0,0,0,,element in {\u1}the{\u0}
-Dialogue: 0,0:00:31.74,0:00:31.96,Default,,0,0,0,,{\u1}array{\u0} has bubbled
-Dialogue: 0,0:00:31.96,0:00:32.22,Default,,0,0,0,,array has bubbled
-Dialogue: 0,0:00:32.22,0:00:32.38,Default,,0,0,0,,array {\u1}has{\u0} bubbled
-Dialogue: 0,0:00:32.38,0:00:32.50,Default,,0,0,0,,array has bubbled
-Dialogue: 0,0:00:32.50,0:00:32.76,Default,,0,0,0,,array has {\u1}bubbled{\u0}
-Dialogue: 0,0:00:32.98,0:00:33.08,Default,,0,0,0,,{\u1}to{\u0} the end of the
-Dialogue: 0,0:00:33.08,0:00:33.10,Default,,0,0,0,,to the end of the
-Dialogue: 0,0:00:33.10,0:00:33.16,Default,,0,0,0,,to {\u1}the{\u0} end of the
-Dialogue: 0,0:00:33.16,0:00:33.18,Default,,0,0,0,,to the end of the
-Dialogue: 0,0:00:33.18,0:00:33.24,Default,,0,0,0,,to the {\u1}end{\u0} of the
-Dialogue: 0,0:00:33.24,0:00:33.26,Default,,0,0,0,,to the end of the
-Dialogue: 0,0:00:33.26,0:00:33.30,Default,,0,0,0,,to the end {\u1}of{\u0} the
-Dialogue: 0,0:00:33.30,0:00:33.32,Default,,0,0,0,,to the end of the
-Dialogue: 0,0:00:33.32,0:00:33.38,Default,,0,0,0,,to the end of {\u1}the{\u0}
-Dialogue: 0,0:00:33.40,0:00:33.52,Default,,0,0,0,,{\u1}array.{\u0} The outer
-Dialogue: 0,0:00:33.52,0:00:34.08,Default,,0,0,0,,array. The outer
-Dialogue: 0,0:00:34.08,0:00:34.18,Default,,0,0,0,,array. {\u1}The{\u0} outer
-Dialogue: 0,0:00:34.18,0:00:34.22,Default,,0,0,0,,array. The outer
-Dialogue: 0,0:00:34.22,0:00:34.34,Default,,0,0,0,,array. The {\u1}outer{\u0}
-Dialogue: 0,0:00:34.36,0:00:34.50,Default,,0,0,0,,{\u1}loop{\u0} continues
-Dialogue: 0,0:00:34.50,0:00:34.52,Default,,0,0,0,,loop continues
-Dialogue: 0,0:00:34.52,0:00:34.88,Default,,0,0,0,,loop {\u1}continues{\u0}
-Dialogue: 0,0:00:35.72,0:00:35.88,Default,,0,0,0,,{\u1}until{\u0} the array is
-Dialogue: 0,0:00:35.88,0:00:35.90,Default,,0,0,0,,until the array is
-Dialogue: 0,0:00:35.90,0:00:35.96,Default,,0,0,0,,until {\u1}the{\u0} array is
-Dialogue: 0,0:00:35.96,0:00:35.98,Default,,0,0,0,,until the array is
-Dialogue: 0,0:00:35.98,0:00:36.14,Default,,0,0,0,,until the {\u1}array{\u0} is
-Dialogue: 0,0:00:36.14,0:00:36.16,Default,,0,0,0,,until the array is
-Dialogue: 0,0:00:36.16,0:00:36.22,Default,,0,0,0,,until the array {\u1}is{\u0}
-Dialogue: 0,0:00:36.24,0:00:36.42,Default,,0,0,0,,{\u1}fully{\u0} sorted, at
-Dialogue: 0,0:00:36.42,0:00:36.46,Default,,0,0,0,,fully sorted, at
-Dialogue: 0,0:00:36.46,0:00:36.70,Default,,0,0,0,,fully {\u1}sorted,{\u0} at
-Dialogue: 0,0:00:36.70,0:00:37.72,Default,,0,0,0,,fully sorted, at
-Dialogue: 0,0:00:37.72,0:00:37.78,Default,,0,0,0,,fully sorted, {\u1}at{\u0}
-Dialogue: 0,0:00:37.80,0:00:37.92,Default,,0,0,0,,{\u1}which{\u0} point the
-Dialogue: 0,0:00:37.92,0:00:37.94,Default,,0,0,0,,which point the
-Dialogue: 0,0:00:37.94,0:00:38.12,Default,,0,0,0,,which {\u1}point{\u0} the
-Dialogue: 0,0:00:38.12,0:00:38.14,Default,,0,0,0,,which point the
-Dialogue: 0,0:00:38.14,0:00:38.20,Default,,0,0,0,,which point {\u1}the{\u0}
-Dialogue: 0,0:00:38.24,0:00:38.48,Default,,0,0,0,,{\u1}function{\u0} returns
-Dialogue: 0,0:00:38.48,0:00:38.52,Default,,0,0,0,,function returns
-Dialogue: 0,0:00:38.52,0:00:38.82,Default,,0,0,0,,function {\u1}returns{\u0}
-Dialogue: 0,0:00:38.86,0:00:38.94,Default,,0,0,0,,{\u1}the{\u0} sorted array.
-Dialogue: 0,0:00:38.94,0:00:38.96,Default,,0,0,0,,the sorted array.
-Dialogue: 0,0:00:38.96,0:00:39.14,Default,,0,0,0,,the {\u1}sorted{\u0} array.
-Dialogue: 0,0:00:39.14,0:00:39.16,Default,,0,0,0,,the sorted array.
-Dialogue: 0,0:00:39.16,0:00:39.34,Default,,0,0,0,,the sorted {\u1}array.{\u0}
+Dialogue: 0,0:00:00.35,0:00:00.45,Default,,0,0,0,,{\u1}We{\u0} start by
+Dialogue: 0,0:00:00.45,0:00:00.47,Default,,0,0,0,,We start by
+Dialogue: 0,0:00:00.47,0:00:00.63,Default,,0,0,0,,We {\u1}start{\u0} by
+Dialogue: 0,0:00:00.63,0:00:00.65,Default,,0,0,0,,We start by
+Dialogue: 0,0:00:00.65,0:00:00.75,Default,,0,0,0,,We start {\u1}by{\u0}
+Dialogue: 0,0:00:00.77,0:00:01.11,Default,,0,0,0,,{\u1}defining{\u0} a
+Dialogue: 0,0:00:01.11,0:00:01.21,Default,,0,0,0,,defining a
+Dialogue: 0,0:00:01.21,0:00:01.25,Default,,0,0,0,,defining {\u1}a{\u0}
+Dialogue: 0,0:00:01.29,0:00:01.57,Default,,0,0,0,,{\u1}function{\u0} bubble
+Dialogue: 0,0:00:01.57,0:00:01.61,Default,,0,0,0,,function bubble
+Dialogue: 0,0:00:01.61,0:00:01.83,Default,,0,0,0,,function {\u1}bubble{\u0}
+Dialogue: 0,0:00:01.87,0:00:02.07,Default,,0,0,0,,{\u1}sort{\u0} that takes an
+Dialogue: 0,0:00:02.07,0:00:02.59,Default,,0,0,0,,sort that takes an
+Dialogue: 0,0:00:02.59,0:00:02.69,Default,,0,0,0,,sort {\u1}that{\u0} takes an
+Dialogue: 0,0:00:02.69,0:00:02.71,Default,,0,0,0,,sort that takes an
+Dialogue: 0,0:00:02.71,0:00:02.87,Default,,0,0,0,,sort that {\u1}takes{\u0} an
+Dialogue: 0,0:00:02.87,0:00:02.91,Default,,0,0,0,,sort that takes an
+Dialogue: 0,0:00:02.91,0:00:02.95,Default,,0,0,0,,sort that takes {\u1}an{\u0}
+Dialogue: 0,0:00:02.97,0:00:03.21,Default,,0,0,0,,{\u1}array,{\u0} arr, as
+Dialogue: 0,0:00:03.21,0:00:03.23,Default,,0,0,0,,array, arr, as
+Dialogue: 0,0:00:03.23,0:00:03.95,Default,,0,0,0,,array, {\u1}arr,{\u0} as
+Dialogue: 0,0:00:03.95,0:00:04.69,Default,,0,0,0,,array, arr, as
+Dialogue: 0,0:00:04.69,0:00:04.81,Default,,0,0,0,,array, arr, {\u1}as{\u0}
+Dialogue: 0,0:00:04.85,0:00:05.13,Default,,0,0,0,,{\u1}input.{\u0} We then
+Dialogue: 0,0:00:05.13,0:00:06.05,Default,,0,0,0,,input. We then
+Dialogue: 0,0:00:06.05,0:00:06.15,Default,,0,0,0,,input. {\u1}We{\u0} then
+Dialogue: 0,0:00:06.15,0:00:06.17,Default,,0,0,0,,input. We then
+Dialogue: 0,0:00:06.17,0:00:06.31,Default,,0,0,0,,input. We {\u1}then{\u0}
+Dialogue: 0,0:00:06.35,0:00:06.73,Default,,0,0,0,,{\u1}initialize{\u0} a
+Dialogue: 0,0:00:06.73,0:00:06.75,Default,,0,0,0,,initialize a
+Dialogue: 0,0:00:06.75,0:00:06.77,Default,,0,0,0,,initialize {\u1}a{\u0}
+Dialogue: 0,0:00:06.81,0:00:07.13,Default,,0,0,0,,{\u1}variable{\u0} n to
+Dialogue: 0,0:00:07.13,0:00:07.35,Default,,0,0,0,,variable n to
+Dialogue: 0,0:00:07.35,0:00:07.43,Default,,0,0,0,,variable {\u1}n{\u0} to
+Dialogue: 0,0:00:07.43,0:00:08.23,Default,,0,0,0,,variable n to
+Dialogue: 0,0:00:08.23,0:00:08.31,Default,,0,0,0,,variable n {\u1}to{\u0}
+Dialogue: 0,0:00:08.37,0:00:08.53,Default,,0,0,0,,{\u1}store{\u0} the length
+Dialogue: 0,0:00:08.53,0:00:08.55,Default,,0,0,0,,store the length
+Dialogue: 0,0:00:08.55,0:00:08.61,Default,,0,0,0,,store {\u1}the{\u0} length
+Dialogue: 0,0:00:08.61,0:00:08.65,Default,,0,0,0,,store the length
+Dialogue: 0,0:00:08.65,0:00:08.85,Default,,0,0,0,,store the {\u1}length{\u0}
+Dialogue: 0,0:00:08.87,0:00:08.93,Default,,0,0,0,,{\u1}of{\u0} the input
+Dialogue: 0,0:00:08.93,0:00:08.95,Default,,0,0,0,,of the input
+Dialogue: 0,0:00:08.95,0:00:09.01,Default,,0,0,0,,of {\u1}the{\u0} input
+Dialogue: 0,0:00:09.01,0:00:09.05,Default,,0,0,0,,of the input
+Dialogue: 0,0:00:09.05,0:00:09.25,Default,,0,0,0,,of the {\u1}input{\u0}
+Dialogue: 0,0:00:09.27,0:00:09.45,Default,,0,0,0,,{\u1}array.{\u0} The outer
+Dialogue: 0,0:00:09.45,0:00:10.83,Default,,0,0,0,,array. The outer
+Dialogue: 0,0:00:10.83,0:00:10.93,Default,,0,0,0,,array. {\u1}The{\u0} outer
+Dialogue: 0,0:00:10.93,0:00:10.97,Default,,0,0,0,,array. The outer
+Dialogue: 0,0:00:10.97,0:00:11.13,Default,,0,0,0,,array. The {\u1}outer{\u0}
+Dialogue: 0,0:00:11.15,0:00:11.33,Default,,0,0,0,,{\u1}loop{\u0} for i in range
+Dialogue: 0,0:00:11.33,0:00:11.55,Default,,0,0,0,,loop for i in range
+Dialogue: 0,0:00:11.55,0:00:11.75,Default,,0,0,0,,loop {\u1}for{\u0} i in range
+Dialogue: 0,0:00:11.75,0:00:11.77,Default,,0,0,0,,loop for i in range
+Dialogue: 0,0:00:11.77,0:00:11.79,Default,,0,0,0,,loop for {\u1}i{\u0} in range
+Dialogue: 0,0:00:11.79,0:00:13.69,Default,,0,0,0,,loop for i in range
+Dialogue: 0,0:00:13.70,0:00:13.84,Default,,0,0,0,,loop for i {\u1}in{\u0} range
+Dialogue: 0,0:00:13.84,0:00:13.88,Default,,0,0,0,,loop for i in range
+Dialogue: 0,0:00:13.88,0:00:14.12,Default,,0,0,0,,loop for i in {\u1}range{\u0}
+Dialogue: 0,0:00:14.32,0:00:14.42,Default,,0,0,0,,{\u1}n{\u0} times where n is
+Dialogue: 0,0:00:14.42,0:00:14.84,Default,,0,0,0,,n times where n is
+Dialogue: 0,0:00:14.84,0:00:15.12,Default,,0,0,0,,n {\u1}times{\u0} where n is
+Dialogue: 0,0:00:15.12,0:00:15.88,Default,,0,0,0,,n times where n is
+Dialogue: 0,0:00:15.88,0:00:16.06,Default,,0,0,0,,n times {\u1}where{\u0} n is
+Dialogue: 0,0:00:16.06,0:00:16.20,Default,,0,0,0,,n times where n is
+Dialogue: 0,0:00:16.20,0:00:16.28,Default,,0,0,0,,n times where {\u1}n{\u0} is
+Dialogue: 0,0:00:16.28,0:00:16.52,Default,,0,0,0,,n times where n is
+Dialogue: 0,0:00:16.52,0:00:16.60,Default,,0,0,0,,n times where n {\u1}is{\u0}
+Dialogue: 0,0:00:16.64,0:00:16.70,Default,,0,0,0,,{\u1}the{\u0} length of the
+Dialogue: 0,0:00:16.70,0:00:16.72,Default,,0,0,0,,the length of the
+Dialogue: 0,0:00:16.72,0:00:16.90,Default,,0,0,0,,the {\u1}length{\u0} of the
+Dialogue: 0,0:00:16.90,0:00:16.92,Default,,0,0,0,,the length of the
+Dialogue: 0,0:00:16.92,0:00:16.98,Default,,0,0,0,,the length {\u1}of{\u0} the
+Dialogue: 0,0:00:16.98,0:00:17.00,Default,,0,0,0,,the length of the
+Dialogue: 0,0:00:17.00,0:00:17.06,Default,,0,0,0,,the length of {\u1}the{\u0}
+Dialogue: 0,0:00:17.08,0:00:17.28,Default,,0,0,0,,{\u1}array.{\u0} The inner
+Dialogue: 0,0:00:17.28,0:00:17.64,Default,,0,0,0,,array. The inner
+Dialogue: 0,0:00:17.64,0:00:17.72,Default,,0,0,0,,array. {\u1}The{\u0} inner
+Dialogue: 0,0:00:17.72,0:00:17.76,Default,,0,0,0,,array. The inner
+Dialogue: 0,0:00:17.76,0:00:17.90,Default,,0,0,0,,array. The {\u1}inner{\u0}
+Dialogue: 0,0:00:17.92,0:00:18.06,Default,,0,0,0,,{\u1}loop{\u0} for j in range
+Dialogue: 0,0:00:18.06,0:00:18.85,Default,,0,0,0,,loop for j in range
+Dialogue: 0,0:00:18.85,0:00:19.03,Default,,0,0,0,,loop {\u1}for{\u0} j in range
+Dialogue: 0,0:00:19.03,0:00:19.17,Default,,0,0,0,,loop for j in range
+Dialogue: 0,0:00:19.17,0:00:19.41,Default,,0,0,0,,loop for {\u1}j{\u0} in range
+Dialogue: 0,0:00:19.41,0:00:19.49,Default,,0,0,0,,loop for j in range
+Dialogue: 0,0:00:19.49,0:00:19.55,Default,,0,0,0,,loop for j {\u1}in{\u0} range
+Dialogue: 0,0:00:19.55,0:00:19.59,Default,,0,0,0,,loop for j in range
+Dialogue: 0,0:00:19.59,0:00:19.87,Default,,0,0,0,,loop for j in {\u1}range{\u0}
+Dialogue: 0,0:00:20.27,0:00:20.49,Default,,0,0,0,,{\u1}runs{\u0} on r1, the
+Dialogue: 0,0:00:20.49,0:00:20.65,Default,,0,0,0,,runs on r1, the
+Dialogue: 0,0:00:20.65,0:00:20.79,Default,,0,0,0,,runs {\u1}on{\u0} r1, the
+Dialogue: 0,0:00:20.79,0:00:21.27,Default,,0,0,0,,runs on r1, the
+Dialogue: 0,0:00:21.27,0:00:21.49,Default,,0,0,0,,runs on {\u1}r1,{\u0} the
+Dialogue: 0,0:00:21.49,0:00:21.93,Default,,0,0,0,,runs on r1, the
+Dialogue: 0,0:00:21.93,0:00:22.09,Default,,0,0,0,,runs on r1, {\u1}the{\u0}
+Dialogue: 0,0:00:22.29,0:00:22.57,Default,,0,0,0,,{\u1}times{\u0} which
+Dialogue: 0,0:00:22.57,0:00:22.61,Default,,0,0,0,,times which
+Dialogue: 0,0:00:22.61,0:00:22.73,Default,,0,0,0,,times {\u1}which{\u0}
+Dialogue: 0,0:00:22.77,0:00:23.07,Default,,0,0,0,,{\u1}represents{\u0} the
+Dialogue: 0,0:00:23.07,0:00:23.09,Default,,0,0,0,,represents the
+Dialogue: 0,0:00:23.09,0:00:23.17,Default,,0,0,0,,represents {\u1}the{\u0}
+Dialogue: 0,0:00:23.21,0:00:23.35,Default,,0,0,0,,{\u1}number{\u0} of
+Dialogue: 0,0:00:23.35,0:00:23.39,Default,,0,0,0,,number of
+Dialogue: 0,0:00:23.39,0:00:23.43,Default,,0,0,0,,number {\u1}of{\u0}
+Dialogue: 0,0:00:23.45,0:00:23.91,Default,,0,0,0,,{\u1}comparisons{\u0}
+Dialogue: 0,0:00:24.03,0:00:24.23,Default,,0,0,0,,{\u1}needed{\u0} to sort the
+Dialogue: 0,0:00:24.23,0:00:24.27,Default,,0,0,0,,needed to sort the
+Dialogue: 0,0:00:24.27,0:00:24.35,Default,,0,0,0,,needed {\u1}to{\u0} sort the
+Dialogue: 0,0:00:24.35,0:00:24.41,Default,,0,0,0,,needed to sort the
+Dialogue: 0,0:00:24.41,0:00:24.61,Default,,0,0,0,,needed to {\u1}sort{\u0} the
+Dialogue: 0,0:00:24.62,0:00:24.82,Default,,0,0,0,,needed to sort the
+Dialogue: 0,0:00:24.82,0:00:24.90,Default,,0,0,0,,needed to sort {\u1}the{\u0}
+Dialogue: 0,0:00:24.94,0:00:25.16,Default,,0,0,0,,{\u1}array.{\u0} We then
+Dialogue: 0,0:00:25.16,0:00:26.84,Default,,0,0,0,,array. We then
+Dialogue: 0,0:00:26.84,0:00:26.94,Default,,0,0,0,,array. {\u1}We{\u0} then
+Dialogue: 0,0:00:26.94,0:00:26.96,Default,,0,0,0,,array. We then
+Dialogue: 0,0:00:26.96,0:00:27.08,Default,,0,0,0,,array. We {\u1}then{\u0}
+Dialogue: 0,0:00:27.14,0:00:27.40,Default,,0,0,0,,{\u1}compare{\u0} adjacent
+Dialogue: 0,0:00:27.40,0:00:27.46,Default,,0,0,0,,compare adjacent
+Dialogue: 0,0:00:27.46,0:00:27.80,Default,,0,0,0,,compare {\u1}adjacent{\u0}
+Dialogue: 0,0:00:27.84,0:00:28.14,Default,,0,0,0,,{\u1}elements{\u0} in the
+Dialogue: 0,0:00:28.14,0:00:28.22,Default,,0,0,0,,elements in the
+Dialogue: 0,0:00:28.22,0:00:28.28,Default,,0,0,0,,elements {\u1}in{\u0} the
+Dialogue: 0,0:00:28.28,0:00:28.30,Default,,0,0,0,,elements in the
+Dialogue: 0,0:00:28.30,0:00:28.36,Default,,0,0,0,,elements in {\u1}the{\u0}
+Dialogue: 0,0:00:28.38,0:00:28.64,Default,,0,0,0,,{\u1}array{\u0} using the
+Dialogue: 0,0:00:28.64,0:00:29.04,Default,,0,0,0,,array using the
+Dialogue: 0,0:00:29.04,0:00:29.28,Default,,0,0,0,,array {\u1}using{\u0} the
+Dialogue: 0,0:00:29.28,0:00:29.94,Default,,0,0,0,,array using the
+Dialogue: 0,0:00:29.94,0:00:30.02,Default,,0,0,0,,array using {\u1}the{\u0}
+Dialogue: 0,0:00:30.04,0:00:30.38,Default,,0,0,0,,{\u1}condition{\u0} in the
+Dialogue: 0,0:00:30.38,0:00:30.46,Default,,0,0,0,,condition in the
+Dialogue: 0,0:00:30.46,0:00:30.54,Default,,0,0,0,,condition {\u1}in{\u0} the
+Dialogue: 0,0:00:30.54,0:00:30.56,Default,,0,0,0,,condition in the
+Dialogue: 0,0:00:30.56,0:00:30.66,Default,,0,0,0,,condition in {\u1}the{\u0}
+Dialogue: 0,0:00:30.86,0:00:31.10,Default,,0,0,0,,{\u1}different{\u0} rj.
+Dialogue: 0,0:00:31.10,0:00:31.42,Default,,0,0,0,,different rj.
+Dialogue: 0,0:00:31.42,0:00:31.92,Default,,0,0,0,,different {\u1}rj.{\u0}
+Dialogue: 0,0:00:32.34,0:00:32.74,Default,,0,0,0,,{\u1}Finally,{\u0} we
+Dialogue: 0,0:00:32.74,0:00:33.40,Default,,0,0,0,,Finally, we
+Dialogue: 0,0:00:33.40,0:00:33.68,Default,,0,0,0,,Finally, {\u1}we{\u0}
+Dialogue: 0,0:00:34.54,0:00:34.86,Default,,0,0,0,,{\u1}return{\u0} the sorted
+Dialogue: 0,0:00:34.86,0:00:34.96,Default,,0,0,0,,return the sorted
+Dialogue: 0,0:00:34.96,0:00:35.06,Default,,0,0,0,,return {\u1}the{\u0} sorted
+Dialogue: 0,0:00:35.06,0:00:35.14,Default,,0,0,0,,return the sorted
+Dialogue: 0,0:00:35.14,0:00:35.44,Default,,0,0,0,,return the {\u1}sorted{\u0}
+Dialogue: 0,0:00:35.49,0:00:35.75,Default,,0,0,0,,{\u1}array,{\u0} which is
+Dialogue: 0,0:00:35.75,0:00:35.97,Default,,0,0,0,,array, which is
+Dialogue: 0,0:00:35.97,0:00:36.11,Default,,0,0,0,,array, {\u1}which{\u0} is
+Dialogue: 0,0:00:36.11,0:00:36.17,Default,,0,0,0,,array, which is
+Dialogue: 0,0:00:36.17,0:00:36.25,Default,,0,0,0,,array, which {\u1}is{\u0}
+Dialogue: 0,0:00:36.31,0:00:36.51,Default,,0,0,0,,{\u1}the{\u0} modified
+Dialogue: 0,0:00:36.51,0:00:36.67,Default,,0,0,0,,the modified
+Dialogue: 0,0:00:36.67,0:00:36.97,Default,,0,0,0,,the {\u1}modified{\u0}
+Dialogue: 0,0:00:36.99,0:00:37.15,Default,,0,0,0,,{\u1}input{\u0} array after
+Dialogue: 0,0:00:37.15,0:00:37.17,Default,,0,0,0,,input array after
+Dialogue: 0,0:00:37.17,0:00:37.37,Default,,0,0,0,,input {\u1}array{\u0} after
+Dialogue: 0,0:00:37.37,0:00:38.27,Default,,0,0,0,,input array after
+Dialogue: 0,0:00:38.27,0:00:38.57,Default,,0,0,0,,input array {\u1}after{\u0}
+Dialogue: 0,0:00:38.83,0:00:38.99,Default,,0,0,0,,{\u1}the{\u0} sorting
+Dialogue: 0,0:00:38.99,0:00:39.09,Default,,0,0,0,,the sorting
+Dialogue: 0,0:00:39.09,0:00:39.29,Default,,0,0,0,,the {\u1}sorting{\u0}
+Dialogue: 0,0:00:39.31,0:00:39.61,Default,,0,0,0,,{\u1}process.{\u0}

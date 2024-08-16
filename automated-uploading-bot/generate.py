@@ -1,4 +1,4 @@
-
+import traceback
 import os
 import io
 from PIL import Image
@@ -139,6 +139,43 @@ def generate_assets(hf_token,payload):
     content = response.content
     return content
 
+
+def transcribe_audio(audio_file_new,subtitle_file,whisper_model):
+    batch_size = 16
+    device = "cuda"
+    if os.path.exists(audio_file_new):
+        audio = whisperx.load_audio(audio_file_new)
+        result = whisper_model.transcribe(audio, batch_size=batch_size)
+        language_code=result["language"]
+        model_a, metadata = whisperx.load_align_model(language_code=result["language"], device=device)
+        result = whisperx.align(result["segments"], model_a, metadata, audio, device, return_char_alignments=False)
+        result['language'] = language_code
+        vtt_writer = get_writer("srt", f'{concept.replace(" ","_")}/')
+        vtt_writer(
+            result,
+            audio_file_new,
+            {"max_line_width": 15, "max_line_count": 1, "highlight_words": True},
+        )
+        (ffmpeg.input(os.path.join(concept.replace(" ","_"),f'{concept.replace(" ","_")}_new.srt')).output(subtitle_file).run())
+
+        # Usage
+        # ass_name = os.path.join(concept.replace(" ","_"),f"{concept.replace(" ","_")}.ass")
+        # we define the styles here:
+        new_styles = {
+            "Default": {
+                1: "Arial",             # Fontname
+                2: "12",                # Fontsize
+                3: "&H00FF00FF",        # PrimaryColour (green)
+                4: "&H000000FF",        # SecondaryColour
+                5: "&H00000000",        # OutlineColour
+                6: "&H64000000",        # BackColour
+                16: "2",                # Outline (thickness)
+                17: "1"                 # Shadow (depth)
+            }
+        }
+        update_ass_styles(subtitle_file, subtitle_file, new_styles)
+        remove_overlapping_subtitles(subtitle_file)
+
 def main(concept):
     if not os.path.isdir(f'{concept.replace(" ","_")}'):
         os.mkdir(f'{concept.replace(" ","_")}')
@@ -157,11 +194,20 @@ def main(concept):
     )
     funny_ppl = ["Barny the dinosaur", "Donald Trump", "Snoop dog", "Mickey Mouse","Goofy","Coward dog","Mr Bean","Bubble tubbies","LEGO batman","Kungfu panda"]
     b_rolls = []
-    for i in range(3):
-        person = funny_ppl[random.randint(0, len(funny_ppl)-1)]
-        prompt = {"inputs":f"{person} on a computer coding with the screen saying: {concept}"}
-        image = Image.open(io.BytesIO(generate_assets(hf_token=hf_token,payload=prompt)))
-        image.save(os.path.join(concept.replace(" ","_"),f"b_roll_{i}.png"))
+    num_images = 0
+
+    while num_images <3:
+        try:
+            person = funny_ppl[random.randint(0, len(funny_ppl)-1)]
+            prompt = {"inputs":f"{person} on a computer coding with the screen saying: {concept}"}
+            content = generate_assets(hf_token=hf_token,payload=prompt)
+            image = Image.open(io.BytesIO(content))
+            image.save(os.path.join(concept.replace(" ","_"),f"b_roll_{num_images}.png"))
+            num_images +=1
+        except Exception as e:
+            print("Something went wrong with generating your B roll images :(")
+            print(f"Error: {str(e)}")
+            traceback.print_exc()
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     batch_size = 16 # reduce if low on GPU mem
@@ -204,6 +250,7 @@ def main(concept):
 
     content = chat_completion_0.choices[0].message.content
     summary =  chat_completion_1.choices[0].message.content
+    summary = summary.split("\n")[-1]
     print(content)
     print(f"Summary: {summary}")
     content = content.split("```")
@@ -220,6 +267,32 @@ def main(concept):
     i = 0
     text = ""
 
+    summary_audio = None
+    # generate audio for the summary
+    print("Generating audio for the intro....")
+    inputs = processor(summary, voice_preset=voice_preset).to(device)
+    intro_audio = model.generate(**inputs)
+    intro_audio = intro_audio.cpu().numpy()
+    intro_audio_file = audio_file.replace("/"+concept.replace(" ","_"),"/"+concept.replace(" ","_")+"_intro")
+    intro_audio_file_new = intro_audio_file.replace("intro","intro_new")
+    intro_subtitle_file = subtitle_file.replace("/"+concept.replace(" ","_"),"/"+concept.replace(" ","_")+"_intro")
+    intro_output_file = output_file.replace("/"+concept.replace(" ","_"),"/"+concept.replace(" ","_")+"_intro")
+    write(intro_audio_file,sampling_rate,  data = (intro_audio.T*32767).astype("int16"))
+    duration = get_audio_duration_ffmpeg(intro_audio_file)
+    # import ipdb; ipdb.set_trace()
+    duration_target = 10
+    speed_factor = duration / duration_target
+    speed_up_audio(intro_audio_file,intro_audio_file_new,speed_factor=speed_factor)
+    transcribe_audio(audio_file_new=intro_audio_file_new,subtitle_file=intro_subtitle_file,whisper_model=whisper_model)
+    try:
+        create_video(f'{concept.replace(" ","_")}/b_roll_0.png' ,intro_audio_file_new, intro_subtitle_file, intro_output_file)
+        print(f"Later half of video created successfully: {output_file}")
+    except subprocess.CalledProcessError as e:
+        print(f"An error occurred: {e}")
+
+
+    # generate audio for the 5 lines in the script
+    print("Generating audio for the script....")
     for line in script_wtimes:
         l = script_wtimes[line]
         text += l
@@ -237,44 +310,13 @@ def main(concept):
     speed_factor = duration / duration_target
     audio_file_new = os.path.join(f'{concept.replace(" ","_")}',f'{concept.replace(" ","_")}_new.wav')
     speed_up_audio(audio_file,audio_file_new,speed_factor=speed_factor)
+    transcribe_audio(audio_file_new=audio_file_new,subtitle_file=subtitle_file,whisper_model=whisper_model)
 
-    if os.path.exists(audio_file_new):
-        audio = whisperx.load_audio(audio_file_new)
-        result = whisper_model.transcribe(audio, batch_size=batch_size)
-        language_code=result["language"]
-        model_a, metadata = whisperx.load_align_model(language_code=result["language"], device=device)
-        result = whisperx.align(result["segments"], model_a, metadata, audio, device, return_char_alignments=False)
-        result['language'] = language_code
-        vtt_writer = get_writer("srt", f'{concept.replace(" ","_")}/')
-        vtt_writer(
-            result,
-            audio_file_new,
-            {"max_line_width": 15, "max_line_count": 1, "highlight_words": True},
-        )
-        (ffmpeg.input(os.path.join(concept.replace(" ","_"),f'{concept.replace(" ","_")}_new.srt')).output(subtitle_file).run())
-
-        # Usage
-        # ass_name = os.path.join(concept.replace(" ","_"),f"{concept.replace(" ","_")}.ass")
-        # we define the styles here:
-        new_styles = {
-            "Default": {
-                1: "Arial",             # Fontname
-                2: "12",                # Fontsize
-                3: "&H00FF00FF",        # PrimaryColour (green)
-                4: "&H000000FF",        # SecondaryColour
-                5: "&H00000000",        # OutlineColour
-                6: "&H64000000",        # BackColour
-                16: "2",                # Outline (thickness)
-                17: "1"                 # Shadow (depth)
-            }
-        }
-        update_ass_styles(subtitle_file, subtitle_file, new_styles)
-        remove_overlapping_subtitles(subtitle_file)
-        try:
-            create_video(f'{concept.replace(" ","_")}/b_roll_0.png' ,audio_file_new, subtitle_file, output_file)
-            print(f"Video created successfully: {output_file}")
-        except subprocess.CalledProcessError as e:
-            print(f"An error occurred: {e}")
+    try:
+        create_video(f'{concept.replace(" ","_")}/b_roll_1.png' ,audio_file_new, subtitle_file, output_file)
+        print(f"Later half of video created successfully: {output_file}")
+    except subprocess.CalledProcessError as e:
+        print(f"An error occurred: {e}")
 
 
 if __name__ == "__main__":
