@@ -271,7 +271,7 @@ def transcribe_audio(audio_file_new,subtitle_file,whisper_model, style = 'Defaul
 
     ## Parameters:
     - `audio_file_new` (str): The path to the new audio file to be transcribed.
-    - `subtitle_file` (str): The path where the generated subtitle file will be saved and updated.
+    - `subtitle_file` (str): The path where the generated subtitle file will be saved and updated. This must be different then the file where the subtitles currently already exist
     - `whisper_model` (Whisper Model Object): The Whisper model used for transcribing the audio.
     - `style` (str): The name of the style to be applied to the subtitles. Default is 'Default'.
 
@@ -322,11 +322,23 @@ def transcribe_audio(audio_file_new,subtitle_file,whisper_model, style = 'Defaul
             audio_file_new,
             {"max_line_width": 15, "max_line_count": 1, "highlight_words": True},
         )
+
+        # concept = concept.replace(" ","_")
         if 'intro' in subtitle_file:
-            file_name = f'{concept.replace(" ","")}intro_new.srt'
+            file_name = f'{concept.replace(" ","_")}_intro_new.srt'
         else:
-            file_name = f'{concept.replace(" ","")}new.srt'
-        (ffmpeg.input(os.path.join(concept.replace(" ",""),file_name)).output(subtitle_file).run())
+            file_name = f'{concept.replace(" ","_")}_new.srt'
+        print(f"This is the file_name:{file_name}")
+        print(f"This is the subtitle_file:{subtitle_file}")
+
+        try:
+            # joins the input file is the one being read and processed. the file_name is the one being outputted.
+            ffmpeg.input(subtitle_file).output(file_name).overwrite_output().run()
+        
+        except ffmpeg.Error as e:
+            print(f"An error occurred: {e.stderr.decode()}")
+
+        # (ffmpeg.input(os.path.join(concept.replace(" ","_"),file_name)).output(subtitle_file).run())
 
         # Usage
         # ass_name = os.path.join(concept.replace(" ","_"),f"{concept.replace(" ","_")}.ass")
@@ -459,10 +471,12 @@ def transcribe_audio(audio_file_new,subtitle_file,whisper_model, style = 'Defaul
         remove_overlapping_subtitles(subtitle_file)
 
 
+import os
+
 def make_file_path(concept, extension):
     """
     ## Description:
-    Generates a file path for a given concept and file extension, ensuring the directory exists.
+    Generates a file path for a given concept and file extension, ensuring the directory exists and creates an empty file.
 
     ## Parameters:
     - `concept` (str): The concept name used to create a directory and generate the file path.
@@ -473,22 +487,28 @@ def make_file_path(concept, extension):
     
     ## Example:
     ```python
-    audio_file = file_path('Example Concept', 'wav')
-    subtitle_file = file_path('Example Concept', 'ass')
-    output_file = file_path('Example Concept', 'mp4')
+    audio_file = make_file_path('Example Concept', 'wav')
+    subtitle_file = make_file_path('Example Concept', 'ass')
+    output_file = make_file_path('Example Concept', 'mp4')
     ```
     """
 
-    # Rplace spaces with underscores in the concept name
+    # Replace spaces with underscores in the concept name
     concept_dir = concept.replace(" ", "_")
     
-    # Creat the directry if it doesnt exist
+    # Create the directory if it doesn't exist
     if not os.path.isdir(concept_dir):
         os.mkdir(concept_dir)
     
-    # Generate the file pth with the specified extension
-    return os.path.join(concept_dir, f'{concept_dir}.{extension}')
-
+    # Generate the file path with the specified extension
+    file_path = os.path.join(concept_dir, f'{concept_dir}.{extension}')
+    
+    # Create an empty file (or write a placeholder) if it doesn't exist
+    if not os.path.exists(file_path):
+        with open(file_path, 'w') as file:
+            file.write('')  # Writing an empty string to ensure the file is created
+    
+    return file_path
 
 def get_b_rolls(concept, num_b_rolls, hf_token):
     """
@@ -697,6 +717,71 @@ def load_code_from_file(file_path):
         print(f"The file {file_path} was not found.")
         return None
 
+def generate_audio_and_subtitle(input_text, concept, voice_preset="v2/en_speaker_6", duration_target=None, name="intro"):
+    """
+    Generates audio and subtitle files for a given text and concept.
+
+    Parameters:
+    input_text (str): The text content to generate audio from.
+    concept (str): The concept or topic for naming the output files.
+    voice_preset (str): The voice preset to use for generating audio.
+    duration_target (float, optional): The target duration for the audio in seconds. 
+    If not provided, no speed adjustment will be made.
+    name (str): The suffix to use for naming the output files.
+    
+    Returns:
+    tuple: Returns the generated audio file and subtitle file names.
+    """
+
+    # Path setup
+    audio_file = make_file_path(concept, f'{name}.wav')
+    subtitle_file = make_file_path(concept, f'{name}.srt')
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+
+    # Initialize processor and model
+    processor = AutoProcessor.from_pretrained("suno/bark")
+    model = BarkModel.from_pretrained("suno/bark-small").to(device)
+    whisper_model = whisperx.load_model("large-v2", device)
+    
+    # creating the full length audio: 
+    scripts = input_text.split("\n")
+    scripts = [x.strip() for x in scripts]
+        
+    full_audio = np.zeros((1,1))
+
+    text = ""
+    print("Generating audio for the script....")
+    for l in scripts:
+        print(f"Generating audio for this line: {l}")
+        text += l
+        inputs = processor(l, voice_preset=voice_preset).to(device)
+
+        audio_array = model.generate(**inputs)
+        audio_array = audio_array.cpu().numpy()
+        full_audio = np.hstack((full_audio, audio_array))
+    
+    # Write audio to file
+    sampling_rate = 24000
+    write(audio_file, sampling_rate, (full_audio.T * 32767).astype("int16"))
+    
+    # Adjust audio speed if duration_target is provided
+    if duration_target is not None:
+        duration = get_audio_duration_ffmpeg(audio_file)
+        speed_factor = duration / duration_target
+        audio_file_new = audio_file.replace(".wav", "_new.wav")
+        speed_up_audio(audio_file, audio_file_new, speed_factor=speed_factor)
+    else:
+        audio_file_new = audio_file
+
+    # Transcribe audio to generate subtitle file
+    print("Generating subtitles...")
+    transcribe_audio(audio_file_new=audio_file_new, subtitle_file=subtitle_file, whisper_model=whisper_model)
+    
+    print(f"Audio file generated: {audio_file_new}")
+    print(f"Subtitle file generated: {subtitle_file}")
+
+    return audio_file_new, subtitle_file
+
 
 
 def main(concept):
@@ -709,11 +794,11 @@ def main(concept):
     # getting the API keys and setting up the inference models not stored locally:
     load_dotenv(".env")
     Groq_api_key  = os.getenv("GROQ_APIKEY")
-    import ipdb; ipdb.set_trace()
+    # import ipdb; ipdb.set_trace()
     hf_token = os.getenv("HF_TOKEN")
     client = Groq(api_key = Groq_api_key,)
 
-    # # get the B-Rolls:
+    # get the B-Rolls:
     # num_b_rolls = 3
     # b_roll_paths = get_b_rolls(concept, num_b_rolls, hf_token)
 
@@ -732,6 +817,9 @@ def main(concept):
     print(content)
     print(f"Summary: {summary}")
 
+    # gets the code into a text file:
+    code_file_path = save_code_snippet_to_file(content ,concept)
+    code_snippet = load_code_from_file(code_file_path)
 
     # loading up the models:
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -742,9 +830,6 @@ def main(concept):
     whisper_model = whisperx.load_model("large-v2", device, compute_type=compute_type)
 
 
-    # # gets the code into a text file:
-    # code_file_path = save_code_snippet_to_file(concept, content)
-    # code_snippet = load_code_from_file(code_file_path)
 
     # run this method here, imported from main.py, which I need to be able to run in command prompt AKA windows. Just that one bit of code.
     # print("trying typing now:")
@@ -770,20 +855,8 @@ def main(concept):
     summary_audio = None
     # generate audio for the summary
     print("Generating audio for the intro....")
-    inputs = processor(summary, voice_preset=voice_preset).to(device)
-    intro_audio = model.generate(**inputs)
-    intro_audio = intro_audio.cpu().numpy()
-    intro_audio_file = audio_file.replace("/"+concept.replace(" ","_"),"/"+concept.replace(" ","_")+"_intro")
-    intro_audio_file_new = intro_audio_file.replace("intro","intro_new")
-    intro_subtitle_file = subtitle_file.replace("/"+concept.replace(" ","_"),"/"+concept.replace(" ","_")+"_intro")
+    intro_audio_file_new, intro_subtitle_file = generate_audio_and_subtitle(summary, concept, voice_preset, duration_target=10, name="intro")
     intro_output_file = output_file.replace("/"+concept.replace(" ","_"),"/"+concept.replace(" ","_")+"_intro")
-    write(intro_audio_file,sampling_rate,  data = (intro_audio.T*32767).astype("int16"))
-    duration = get_audio_duration_ffmpeg(intro_audio_file)
-    # import ipdb; ipdb.set_trace()
-    duration_target = 10
-    speed_factor = duration / duration_target
-    speed_up_audio(intro_audio_file,intro_audio_file_new,speed_factor=speed_factor)
-    transcribe_audio(audio_file_new=intro_audio_file_new,subtitle_file=intro_subtitle_file,whisper_model=whisper_model)
     try:
         create_video(f'{concept.replace(" ","_")}/b_roll_0.png' ,intro_audio_file_new, intro_subtitle_file, intro_output_file)
         print(f"Later half of video created successfully: {output_file}")
@@ -793,24 +866,7 @@ def main(concept):
 
     # generate audio for the 5 lines in the script
     print("Generating audio for the script....")
-    for line in script_wtimes:
-        l = script_wtimes[line]
-        text += l
-        inputs = processor(l, voice_preset=voice_preset).to(device)
-
-        audio_array = model.generate(**inputs)
-        audio_array = audio_array.cpu().numpy()
-        full_audio = np.hstack((full_audio,audio_array))
-
-    # import ipdb; ipdb.set_trace()
-    write(audio_file,sampling_rate,  data = (full_audio.T*32767).astype("int16"))
-    duration = get_audio_duration_ffmpeg(audio_file)
-    # import ipdb; ipdb.set_trace()
-    duration_target = 40
-    speed_factor = duration / duration_target
-    audio_file_new = os.path.join(f'{concept.replace(" ","_")}',f'{concept.replace(" ","_")}_new.wav')
-    speed_up_audio(audio_file,audio_file_new,speed_factor=speed_factor)
-    transcribe_audio(audio_file_new=audio_file_new,subtitle_file=subtitle_file,whisper_model=whisper_model)
+    audio_file_new, subtitle_file = generate_audio_and_subtitle(summary, concept, voice_preset, duration_target=None, name=f'{concept.replace(" ", "_")}')
 
     try:
         create_video(f'{concept.replace(" ","_")}/b_roll_1.png' ,audio_file_new, subtitle_file, output_file)
@@ -819,6 +875,26 @@ def main(concept):
         print(f"An error occurred: {e}")
 
 
+
 if __name__ == "__main__":
-    concept = input("What would you like to generate?:  ")
+    # concept = input("What would you like to generate?:  ")
+    concept = "invert a binary tree"
     main(concept)
+    # if concept == "":
+    #     concept = "new srt"
+#     text = '''Here's a quick overview: we define a depth-first search function that takes a graph and a starting vertex as input. 
+# Then, we initialize a set to keep track of visited vertices and a stack with the starting vertex. 
+# Next, we iterate through the stack, popping vertices and marking them as visited if they haven't been visited before. 
+# Finally, we explore the graph by adding unvisited neighbors to the stack.'''
+    # text = '''To start off, we define a depth-first search function that takes a graph and a starting vertex. 
+    #         Then, we initialize a set to keep track of visited vertices and a stack with the starting vertex. '''
+    # generate_audio_and_subtitle(text, concept)
+
+    
+
+
+
+# TODO
+# make the process more streamlined, quite using the concept replace etc
+# make the generate_audio_and_subtitle work for any length of text.
+# Fix what ever is going on with the new, etc files.
